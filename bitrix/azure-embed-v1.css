@@ -1,0 +1,345 @@
+
+.az24 { margin: 0; }
+.az24 img { max-width: 100%; }
+.az24 [hidden] { display: none !important; }
+.az24 {
+  color-scheme: light;
+  --background: oklch(0.95 0.018 68);
+  --foreground: oklch(0.18 0.012 48);
+  --card: oklch(0.975 0.012 70);
+  --primary: oklch(0.2 0.015 45);
+  --primary-fg: oklch(0.97 0.012 70);
+  --secondary: oklch(0.88 0.035 58);
+  --secondary-soft: oklch(0.915 0.026 63);
+  --secondary-fg: oklch(0.24 0.025 45);
+  --muted-fg: oklch(0.42 0.035 48);
+  --accent: oklch(0.48 0.08 43);
+  --border: oklch(0.79 0.035 58);
+  --destructive: oklch(0.577 0.245 27.325);
+  --hero-fg: oklch(0.98 0.008 75);
+  --hero-muted: oklch(0.9 0.018 70);
+  --overlay: oklch(0.12 0.015 45 / 0.62);
+  --scrim: oklch(0.08 0.01 45 / 0.92);
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body: "Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius: 0.375rem;
+}
+.az24 [hidden] { display: none !important; }
+.az24 * { box-sizing: border-box; border-color: var(--border); }
+.az24 { scroll-behavior: smooth; }
+.az24 {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.az24 h1, .az24 h2, .az24 h3 { font-family: var(--font-display); font-weight: 500; margin: 0; text-wrap: balance; }
+.az24 p { margin: 0; }
+.az24 a { color: inherit; }
+.az24 button { font: inherit; }
+.az24 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.az24 .wrap {
+  max-width: 72rem; margin: 0 auto;
+  padding-left: max(24px, env(safe-area-inset-left, 0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
+}
+.az24 .section { padding-block: 4rem; }
+@media (min-width: 768px) {.az24 .section { padding-block: 6rem; }}
+.az24 .h2 { font-size: 1.875rem; line-height: 1.15; text-align: center; }
+@media (min-width: 768px) {.az24 .h2 { font-size: 2.25rem; }}
+.az24 .lead { font-size: .875rem; color: var(--muted-fg); text-align: center; margin: 1rem auto 0; max-width: 28rem; line-height: 1.6; }
+.az24 .eyebrow { font-size: .75rem; font-weight: 500; letter-spacing: .25em; text-transform: uppercase; color: var(--accent); }
+.az24 .icon { width: 1rem; height: 1rem; flex: none; }
+.az24 .hero { position: relative; overflow: hidden; background: var(--primary); color: var(--hero-fg); }
+.az24 .hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 52% 38%; }
+.az24 .hero::after { content: ""; position: absolute; inset: 0; background: var(--overlay); }
+.az24 .hero-inner {
+  position: relative; z-index: 1; min-height: 78svh; display: flex; align-items: flex-end; justify-content: center;
+  padding-block: 5rem 3.5rem;
+}
+@media (min-width: 768px) {.az24 .hero-inner { min-height: 84svh; align-items: center; padding-block: 6rem; }}
+.az24 .hero-copy { max-width: 36rem; text-align: center; }
+.az24 .hero-brand { margin-bottom: 1rem; font-size: .75rem; font-weight: 500; letter-spacing: .35em; text-transform: uppercase; color: var(--hero-muted); }
+.az24 .hero h1 { font-size: 3rem; line-height: 1.05; color: var(--hero-fg); }
+@media (min-width: 768px) {.az24 .hero h1 { font-size: 4.5rem; }}
+@media (min-width: 1024px) {.az24 .hero h1 { font-size: 6rem; }}
+.az24 .hero-sub { margin: 1.5rem auto 0; max-width: 28rem; font-size: 1rem; line-height: 1.65; color: var(--hero-muted); }
+@media (min-width: 768px) {.az24 .hero-sub { font-size: 1.125rem; }}
+.az24 .hero-cta { margin-top: 2rem; }
+@media (min-width: 900px) {.az24 .hero > img { left: auto; width: 56%; object-position: 50% 34%; }
+.az24 .hero::after { background: linear-gradient(90deg, var(--primary) 0 44%, oklch(0.2 0.015 45 / .55) 58%, oklch(0.12 0.015 45 / .15) 100%); }
+.az24 .hero-inner { justify-content: flex-start; }
+.az24 .hero-copy { text-align: left; max-width: 31rem; }
+.az24 .hero-sub { margin-left: 0; }}
+.az24 .btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  border: 0; border-radius: 999px; background: var(--primary); color: var(--primary-fg);
+  padding: .9rem 1.75rem; font-size: .875rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase;
+  text-decoration: none; cursor: pointer; transition: transform .2s ease;
+}
+.az24 .btn:hover { transform: scale(1.03); }
+.az24 .btn-light { background: var(--hero-fg); color: var(--primary); }
+.az24 .marquee { position: relative; z-index: 1; border-block: 1px solid var(--border); background: var(--secondary); padding-block: .75rem; overflow: hidden; display: flex; }
+.az24 .marquee-track { display: flex; flex: none; align-items: center; gap: 2rem; padding-right: 2rem; white-space: nowrap; animation: marquee 30s linear infinite; }
+.az24 .marquee span { display: inline-flex; align-items: center; gap: 2rem; font-size: .75rem; font-weight: 500; letter-spacing: .3em; text-transform: uppercase; color: var(--muted-fg); }
+.az24 .marquee b { color: var(--accent); font-weight: 400; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.az24 .band-card { background: var(--card); border-top: 1px solid var(--border); }
+.az24 .styles-viewport { overflow: hidden; padding-bottom: .5rem; touch-action: pan-y; user-select: none; -webkit-user-select: none; cursor: grab; }
+.az24 .styles-viewport.dragging { cursor: grabbing; }
+.az24 .styles-track { display: flex; width: max-content; will-change: transform; }
+.az24 .styles-copy { display: flex; }
+.az24 .style-card { width: 15rem; flex: none; padding-right: 1.5rem; }
+@media (min-width: 640px) {.az24 .style-card { width: 19rem; }}
+.az24 .style-card h3 { margin-top: 1.25rem; font-size: 1.25rem; }
+.az24 .style-card p { margin-top: .5rem; font-size: .875rem; line-height: 1.6; color: var(--muted-fg); }
+.az24 .style-card a { display: inline-block; margin-top: .75rem; font-size: .8rem; font-weight: 500; color: var(--accent); text-underline-offset: 4px; }
+.az24 .ctrls { margin-top: 1.25rem; display: flex; justify-content: center; gap: .75rem; }
+.az24 .ctrl {
+  display: grid; place-items: center; width: 2.5rem; height: 2.5rem; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--card); color: var(--foreground); cursor: pointer; transition: background .2s;
+}
+.az24 .ctrl:hover { background: var(--secondary); }
+.az24 .ctrl svg { width: 1.25rem; height: 1.25rem; }
+.az24 .ph { aspect-ratio: 4 / 5; width: 100%; max-width: 100%; border-radius: var(--radius); overflow: hidden; display: block; background: var(--secondary-soft); position: relative; }
+.az24 .ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.az24 .ph svg.art { position: absolute; inset: 0; width: 100%; height: 100%; }
+.az24 .ph .ph-label {
+  position: absolute; left: .75rem; right: .75rem; bottom: .7rem; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--muted-fg); text-align: center; line-height: 1.4;
+}
+.az24 .grid-pf { margin-top: 2.5rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+@media (min-width: 768px) {.az24 .grid-pf { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }}
+.az24 .pf-item { padding: 0; border: 0; background: none; border-radius: .75rem; overflow: hidden; cursor: zoom-in; display: block; }
+.az24 .pf-item .ph { border-radius: .75rem; transition: transform .3s ease; }
+.az24 .pf-item:hover .ph { transform: scale(1.04); }
+.az24 .center { margin-top: 2.5rem; display: flex; justify-content: center; }
+.az24 .band-soft { background: var(--secondary-soft); border-block: 1px solid var(--border); }
+.az24 .reviews { margin-top: 2.5rem; display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 1rem; scrollbar-width: none; }
+.az24 .reviews::-webkit-scrollbar { display: none; }
+.az24 .review {
+  flex: none; width: 86%; scroll-snap-align: start; min-height: 20rem; display: flex; flex-direction: column;
+  border: 1px solid var(--border); border-radius: .5rem; background: var(--card); padding: 1.5rem;
+}
+@media (min-width: 640px) {.az24 .review { width: calc(50% - .5rem); }}
+@media (min-width: 1024px) {.az24 .review { width: calc(33.333% - .667rem); }}
+.az24 .review-head { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .75rem; }
+.az24 .avatar { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 999px; background: var(--secondary); color: var(--secondary-fg); font-size: .875rem; font-weight: 600; }
+.az24 .review h3 { font-family: var(--font-body); font-size: 1rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.az24 .review time { display: block; margin-top: .2rem; font-size: .75rem; color: var(--muted-fg); }
+.az24 .g-badge { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 999px; border: 1px solid var(--border); background: var(--card); box-shadow: 0 1px 2px oklch(0.2 0.015 45 / .08); }
+.az24 .g-badge svg { width: 1rem; height: 1rem; }
+.az24 .stars { margin-top: 1.25rem; display: flex; gap: .125rem; color: var(--accent); }
+.az24 .stars svg { width: 1rem; height: 1rem; }
+.az24 .review p { margin-top: 1rem; font-size: .875rem; line-height: 1.65; }
+.az24 .reviews-foot { margin-top: 2.25rem; text-align: center; }
+.az24 .rating { margin: 0 auto; display: inline-flex; align-items: center; gap: .6rem; padding: .55rem 1.1rem; border: 1px solid var(--border); border-radius: 999px; background: var(--card); color: var(--foreground); text-decoration: none; }
+.az24 .rating:hover { border-color: var(--accent); }
+.az24 .rating-num { font-family: var(--font-body); font-size: 1.6rem; font-weight: 600; letter-spacing: -.01em; line-height: 1; font-variant-numeric: tabular-nums; }
+.az24 .rating-stars { display: flex; gap: .1rem; color: oklch(0.8 0.16 80); }
+.az24 .rating-stars svg { width: 1.15rem; height: 1.15rem; }
+.az24 .rating-count { font-size: .8rem; color: var(--muted-fg); }
+.az24 .rating-g { width: 1.5rem; height: 1.5rem; flex: none; }
+.az24 .link-accent { display: inline-flex; align-items: center; gap: .5rem; font-size: .875rem; font-weight: 500; color: var(--accent); text-decoration: none; text-underline-offset: 4px; }
+.az24 .link-accent:hover { text-decoration: underline; }
+.az24 .small-muted { margin-top: .75rem; font-size: .75rem; color: var(--muted-fg); }
+.az24 .about { display: grid; align-items: center; gap: 2.5rem; }
+@media (min-width: 768px) {.az24 .about { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 3.5rem; }}
+@media (min-width: 1024px) {.az24 .about { gap: 5rem; }}
+.az24 .about-img { aspect-ratio: 475 / 511; width: 100%; height: auto; max-width: 100%; border-radius: var(--radius); object-fit: cover; object-position: 50% 0%; display: block; }
+.az24 .about-copy { min-width: 0; }
+.az24 .about-copy h2 { font-size: 1.875rem; line-height: 1.15; }
+@media (min-width: 768px) {.az24 .about-copy h2 { font-size: 2.25rem; }}
+.az24 .about-copy p { margin-top: 1.25rem; line-height: 1.7; color: var(--muted-fg); max-width: 38rem; }
+.az24 .about-copy .link-accent { margin-top: 1.75rem; letter-spacing: .04em; text-transform: uppercase; }
+.az24 .form-wrap { max-width: 36rem; margin: 0 auto; }
+.az24 form { margin-top: 2.5rem; display: grid; gap: 1.25rem; }
+.az24 .row2 { display: grid; gap: 1.25rem; }
+@media (min-width: 640px) {.az24 .row2 { grid-template-columns: 1fr 1fr; }}
+.az24 label { display: block; margin-bottom: .375rem; font-size: .875rem; font-weight: 500; }
+.az24 input, .az24 select, .az24 textarea {
+  width: 100%; border: 1px solid var(--border); border-radius: .5rem; background: var(--card); color: var(--foreground);
+  padding: .75rem 1rem; font: inherit; font-size: .875rem;
+}
+.az24 textarea { resize: vertical; min-height: 6rem; }
+.az24 select {
+  appearance: none; -webkit-appearance: none; padding-right: 2.5rem; cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b5442' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right .9rem center; background-size: 1rem;
+}
+.az24 input::placeholder, .az24 textarea::placeholder { color: oklch(0.55 0.03 50); }
+.az24 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.az24 .form-error { font-size: .875rem; color: var(--destructive); }
+.az24 .btn-block { width: 100%; padding-block: 1rem; white-space: normal; }
+.az24 .btn-block:hover { transform: scale(1.02); }
+.az24 .sent {
+  border: 1px solid var(--border); border-radius: .5rem; background: var(--card); padding: 1.25rem; text-align: center;
+  display: grid; gap: .75rem; justify-items: center;
+}
+.az24 .sent p { font-size: .875rem; color: var(--muted-fg); line-height: 1.6; }
+.az24 .btn-wa { background: oklch(0.55 0.15 150); color: oklch(1 0 0); font-size: 1rem; letter-spacing: .06em; padding-block: 1.1rem; }
+.az24 .btn-wa .icon-wa { width: 1.4rem; height: 1.4rem; }
+.az24 .btn-wa:disabled { opacity: .8; cursor: wait; transform: none; }
+@media (max-width: 440px) {.az24 .btn-wa { font-size: .85rem; letter-spacing: .03em; gap: .6rem; padding-inline: 1rem; }
+.az24 .btn-wa .icon-wa { width: 1.25rem; height: 1.25rem; }}
+.az24 footer { border-top: 1px solid var(--border); }
+.az24 .foot { padding-block: 2.5rem; display: flex; flex-direction: column; align-items: center; gap: 1.25rem; text-align: center; }
+.az24 .foot-brand { font-family: var(--font-display); font-size: 1.5rem; }
+.az24 .foot-row { display: flex; align-items: center; gap: .75rem; }
+.az24 .foot-ig { display: inline-grid; place-items: center; color: var(--muted-fg); transition: color .2s; }
+.az24 .foot-ig:hover { color: var(--foreground); }
+.az24 .foot-ig svg { width: 1.25rem; height: 1.25rem; }
+.az24 .foot-links a { color: var(--muted-fg); transition: color .2s; }
+.az24 .foot-links a:hover { color: var(--foreground); }
+.az24 .foot-links svg { width: 1.25rem; height: 1.25rem; }
+.az24 .lightbox { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; background: var(--scrim); padding: 1rem; }
+.az24 .lightbox .lb-media { width: min(90vw, calc(85vh * 0.8)); max-height: 85vh; }
+.az24 .lightbox .lb-media .ph { border-radius: .5rem; }
+.az24 .lb-btn {
+  position: absolute; border: 0; border-radius: 999px; background: oklch(1 0 0 / .12); color: oklch(1 0 0);
+  padding: .5rem; cursor: pointer; display: grid; place-items: center;
+}
+.az24 .lb-btn:hover { background: oklch(1 0 0 / .22); }
+.az24 .lb-btn svg { width: 1.5rem; height: 1.5rem; }
+.az24 .lb-close { top: calc(1rem + env(safe-area-inset-top, 0px)); right: calc(1rem + env(safe-area-inset-right, 0px)); }
+.az24 .lb-prev { left: calc(.75rem + env(safe-area-inset-left, 0px)); }
+.az24 .lb-next { right: calc(.75rem + env(safe-area-inset-right, 0px)); }
+.az24 .lb-caption { position: absolute; bottom: calc(1rem + env(safe-area-inset-bottom, 0px)); left: 1rem; right: 1rem; text-align: center; color: oklch(0.9 0.018 70); font-size: .8rem; }
+@media (prefers-reduced-motion: reduce) {.az24 { scroll-behavior: auto; }
+.az24 .marquee-track { animation: none; }
+.az24 .btn, .az24 .pf-item .ph { transition: none; }}
+.az24 {
+  --background: #f6f5ef;
+  --foreground: #1e332f;
+  --card: #fffefa;
+  --primary: #173a35;
+  --primary-fg: #f9fff9;
+  --secondary: #e2f1e9;
+  --secondary-soft: #eaf1ea;
+  --secondary-fg: #193d35;
+  --muted-fg: #556b63;
+  --accent: #16836f;
+  --border: #cfddd4;
+  --overlay: rgba(13,39,34,.64);
+  --scrim: rgba(10,24,21,.92);
+  --hero-fg: #fffef9;
+  --hero-muted: #e7f3ea;
+}
+.az24 .hero {background:#143a33; isolation:isolate;}
+.az24 .hero > img {object-position:center 34%;}
+.az24 .hero::after { background:linear-gradient(0deg,#0b2c25 0%,rgba(11,44,37,.96) 12%,rgba(11,44,37,.78) 32%,rgba(11,44,37,.23) 53%,rgba(11,44,37,0) 76%); }
+.az24 .hero-inner {min-height: min(790px,92svh);padding-block: 12rem 3rem;align-items:flex-end;}
+.az24 .hero-copy {max-width:100%;width:100%;text-align:center;}
+.az24 .hero-kicker {color:#abe6d0;letter-spacing:.18em;margin:0 0 .85rem;font-weight:600;line-height:1.5;}
+.az24 .hero h1 {font-size:clamp(1.65rem,7.4vw,2.3rem);line-height:1.1;letter-spacing:-.025em;max-width:none;white-space:nowrap;font-weight:500;text-shadow:0 2px 16px rgba(6,25,21,.12);}
+.az24 .hero-sub {margin: .9rem auto 0;max-width:30rem;font-size:.96rem;line-height:1.55;color:#f0f7f1;}
+.az24 .hero-sub strong {color:#fff;font-weight:600;white-space:nowrap;}
+.az24 .hero-cta { margin-top:1.5rem; }
+.az24 .hero .btn-light {background: #b9f6d9; color:#123d32; border:1px solid rgba(231,255,244,.45); box-shadow:0 10px 35px rgba(4,18,15,.23),inset 0 1px 0 rgba(255,255,255,.5);border-radius:16px;padding:.65rem .72rem .65rem 1.5rem;gap:1.1rem;text-transform:none;font-weight:600;letter-spacing:.012em;font-size:1rem;min-height:3.5rem;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;}
+.az24 .hero .btn-light:hover {background:#d5ffe7;transform:translateY(-2px);box-shadow:0 15px 36px rgba(4,18,15,.3);}
+.az24 .hero .btn-light:active {transform:translateY(0);}
+.az24 .btn-arrow {display:grid;place-items:center;width:2.25rem;height:2.25rem;border-radius:11px;background:#1a5143;color:#eafff3;flex:none;}
+.az24 .btn-arrow .icon {width:1.1rem;height:1.1rem;}
+.az24 .btn-more {background:transparent;border:1px solid var(--primary);color:var(--primary);font-size:.82rem;letter-spacing:.08em;padding:.9rem 1.6rem;}
+.az24 .btn-more:hover {background:var(--primary);color:#fff;}
+.az24 .review .avatar {width:3.25rem;height:3.25rem;overflow:hidden;background:#f5f8f0;}
+.az24 .review .avatar img {width:100%;height:100%;object-fit:cover;}
+.az24 .quote-mark {font-family:Georgia,serif;font-size:2.75rem;color:var(--accent);line-height:1;}
+.az24 .review p {margin-top:1.4rem;}
+.az24 .about-img {object-position:center;}
+.az24 .azure-form {margin:2.5rem auto 1rem;min-height:10rem;}
+.az24 .form-loading {margin:0 auto;padding:1.5rem 1.25rem;text-align:center;color:var(--muted-fg);font-size:.875rem;background:var(--card);border:1px solid var(--border);border-radius:.5rem;}
+.az24 .form-fallback {display:grid;gap:.8rem;text-align:center;margin:1.25rem auto 0;}
+.az24 .form-fallback p {color:var(--muted-fg);font-size:.82rem;}
+.az24 .form-fallback .btn {max-width:100%;}
+@media(min-width:768px) {.az24 .form-fallback .btn {max-width:21rem;margin:auto;}}
+@media(min-width:900px) {.az24 .hero > img {left:auto;width:55%;object-position:center 34%;}
+.az24 .hero::after {background:linear-gradient(90deg,#12372f 0%,#12372f 33%,rgba(18,55,47,.94) 40%,rgba(18,55,47,.46) 52%,rgba(18,55,47,0) 75%);}
+.az24 .hero-inner {min-height: min(820px,85svh);align-items:center;justify-content:flex-start;padding-block:6rem;}
+.az24 .hero-copy {text-align:left;max-width:59%;width:auto;}
+.az24 .hero h1 {font-size:clamp(2.4rem,4vw,3.5rem);white-space:nowrap;}
+.az24 .hero-sub {margin:1.2rem 0 0;}
+.az24 .hero-cta {margin-top:2rem;}}
+@media(max-width:899px) {.az24 .hero > img {object-position:51% 17%;}
+.az24 .hero-inner {min-height: min(810px,92svh);padding-block:10rem 3.3rem;}}
+@media(max-width:374px) {.az24 .hero-kicker {font-size:.59rem;letter-spacing:.11em;}
+.az24 .hero h1 {font-size:clamp(1.55rem,7.3vw,1.75rem);}
+.az24 .hero-sub {font-size:.9rem;}
+.az24 .hero .btn-light {font-size:.94rem;}}
+@media(prefers-reduced-motion:reduce) {.az24 .hero .btn-light {transition:none;}}
+.az24 footer {background:#12372f;border-top:1px solid rgba(255,255,255,.12);color:#eafff3;}
+.az24 .foot {gap:.6rem;padding-block:3.1rem 2.4rem;}
+.az24 .footer-logo {width:180px;height:auto;object-fit:contain;display:block;margin:0 auto -.2rem;}
+.az24 footer .foot-ig {display:inline-flex;gap:.55rem;align-items:center;justify-content:center;text-decoration:none;color:#d8efe4;font-size:.88rem;letter-spacing:.02em;margin-top:.35rem;}
+.az24 footer .foot-ig svg {height:1.12rem;width:1.12rem;}
+.az24 footer .foot-ig:hover {color:#adf3d4;}
+.az24 footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75rem;line-height:1.65;}
+.az24 .about-instagram {text-transform:none !important;letter-spacing:0 !important;line-height:1.5;}
+.az24 .benefits-wide { background:#edf2ef; border-block:1px solid #dbe6df; }
+.az24 .benefits-wide .section { padding-block:clamp(3.7rem,6vw,6rem); }
+.az24 .benefits-marker { width:3.4rem; height:4px; background:#69d99b; margin:0 auto 1.5rem; border-radius:2px; }
+.az24 .benefits-title { font-family:var(--font-display); font-size:clamp(2.25rem,4vw,3.45rem); font-weight:500; line-height:1.08; text-align:center; letter-spacing:.015em; margin:0 auto 2.6rem; max-width:58rem; color:#18372e; }
+.az24 .benefits-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border:1px solid #d0ddd5; background:#f4f7f5; }
+.az24 .benefit-card { min-width:0; text-align:center; padding:2.5rem 1.4rem 2.25rem; border-right:1px solid #d0ddd5; position:relative; }
+.az24 .benefit-card:last-child { border-right:0; }
+.az24 .benefit-card:nth-child(3)::after { content:""; position:absolute; left:0; right:0; bottom:-1px; height:3px; background:#6ddb9d; }
+.az24 .benefit-icon { display:block; width:3.35rem; height:3.35rem; margin:0 auto 1.2rem; fill:none; stroke:#65b8eb; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+.az24 .benefit-card:nth-child(n/**/+3) .benefit-icon { stroke:#67d794; }
+.az24 .benefit-card h3 { color:#193a31; font-family:var(--font-display); font-size:1.85rem; line-height:1.15; font-weight:500; min-height:2.45rem; display:flex; align-items:center; justify-content:center; }
+.az24 .benefit-card p { font-size:.91rem; color:#516961; min-height:3.2rem; line-height:1.5; margin:.65rem auto 1rem; max-width:17rem; }
+.az24 .benefit-rule { width:2.3rem; height:2px; background:#65d99a; margin:0 auto 1.15rem; }
+.az24 .benefit-points { list-style:none; margin:0; padding:0; font-size:.78rem; color:#29453c; text-transform:uppercase; letter-spacing:.015em; }
+.az24 .benefit-points li { padding:.8rem .05rem; border-bottom:1px solid #dce6df; }
+.az24 .benefit-points li:last-child { border-bottom:0; }
+@media(max-width:1023px) {.az24 .benefits-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.az24 .benefit-card:nth-child(2) { border-right:0; }
+.az24 .benefit-card:nth-child(-n/**/+2) { border-bottom:1px solid #d0ddd5; }}
+@media(max-width:579px) {.az24 .benefits-grid { grid-template-columns:1fr; }
+.az24 .benefit-card { border-right:0; border-bottom:1px solid #d0ddd5; padding:2rem 1.5rem 1.6rem; }
+.az24 .benefit-card:last-child { border-bottom:0; }
+.az24 .benefit-card h3 { min-height:0; font-size:2rem; }
+.az24 .benefit-card p { min-height:0; margin-bottom:1rem; }
+.az24 .benefits-title { margin-bottom:2.1rem; font-size:2.3rem; }
+.az24 .benefit-points { font-size:.76rem; }}
+.az24 .benefits-wide {background:#edf3ee;border-block:1px solid #dce8df;}
+.az24 .benefits-wide .section {padding-block:clamp(2.75rem,4.6vw,4.25rem);}
+.az24 .benefits-title {margin-bottom:1.65rem;font-size:clamp(2.05rem,3.6vw,3rem);}
+.az24 .benefits-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid #d8e5dc;background:#fff;border-radius:16px;overflow:hidden;}
+.az24 .benefit-card {min-width:0;min-height:342px;display:flex;flex-direction:column;align-items:center;text-align:center;padding:1.65rem 1.05rem 1.3rem;border-right:1px solid #d8e5dc;background:#fff;}
+.az24 .benefit-card h3 {font-size:1.77rem;min-height:2.5rem;}
+.az24 .benefit-card p {font-size:.91rem;line-height:1.45;min-height:0;margin:.5rem auto .65rem;}
+.az24 .benefit-rule {width:2rem;margin:.15rem auto .5rem;}
+.az24 .benefit-points {width:100%;font-size:.76rem;margin:.2rem 0 0;letter-spacing:.01em;}
+.az24 .benefit-points li {padding:.65rem .2rem;border-bottom:1px solid #e1eae4;line-height:1.25;}
+.az24 .benefit-controls {display:none;align-items:center;justify-content:center;gap:1.2rem;margin-top:.85rem;}
+.az24 .benefit-nav {width:2.55rem;height:2.55rem;border-radius:50%;border:1px solid #bed5c8;color:#184c3b;background:white;display:grid;place-items:center;cursor:pointer;}
+.az24 .benefit-nav svg {width:1.15rem;height:1.15rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.az24 .benefit-nav:disabled {opacity:.35;cursor:default;}
+.az24 .benefit-dots {display:flex;align-items:center;justify-content:center;gap:.45rem;}
+.az24 .benefit-dot {height:.53rem;width:.53rem;border:0;border-radius:99px;background:#b9d3c4;cursor:pointer;padding:0;transition:width .2s,background .2s;}
+.az24 .benefit-dot.is-active {width:1.35rem;background:#21805e;}
+.az24 .benefit-nav:focus-visible, .az24 .benefit-dot:focus-visible {outline:3px solid #54b98a;outline-offset:3px;}
+@media(max-width:1023px) {.az24 .benefits-wide .section {padding-block:2.8rem 3rem;}
+.az24 .benefits-grid {display:flex;gap:12px;border:0;border-radius:0;background:transparent;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;scroll-padding-inline:2px;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:2px 2px 12px;}
+.az24 .benefits-grid::-webkit-scrollbar {display:none;}
+.az24 .benefit-card {flex:0 0 min(66%,380px);min-height:342px;border:1px solid #d7e8dc;border-radius:17px;box-shadow:0 5px 17px rgba(10,56,36,.06);scroll-snap-align:start;scroll-snap-stop:always;}
+.az24 .benefit-card:last-child {border-right:1px solid #d7e8dc;}
+.az24 .benefit-controls {display:flex;}}
+@media(max-width:600px) {.az24 .benefits-wide .section {padding-block:2.35rem 2.5rem;}
+.az24 .benefits-title {font-size:clamp(1.7rem,6.7vw,2.15rem);max-width:22rem;line-height:1.14;margin-bottom:1.35rem;}
+.az24 .benefit-card {flex-basis:calc(100% - 35px);min-height:338px;padding:1.35rem 1rem 1.1rem;}
+.az24 .benefit-icon {width:2.7rem;height:2.7rem;margin-bottom:.8rem;}
+.az24 .benefit-card h3 {font-size:1.77rem;min-height:0;}
+.az24 .benefit-card p {font-size:.91rem;min-height:0;margin:.5rem auto .65rem;}
+.az24 .benefit-rule {margin:0 auto .4rem;}
+.az24 .benefit-points {font-size:.75rem;}
+.az24 .benefit-points li {padding:.65rem .2rem;}}
+@media(prefers-reduced-motion:reduce) {.az24 .benefit-dot {transition:none;}}
+.az24 {box-sizing:border-box;width:100%;margin:0;padding:0;font-size:16px;line-height:1.5;}
+.az24 *,.az24 *::before,.az24 *::after {box-sizing:border-box;}
+
+/* Evita espaçamentos inseridos por alguns templates externos */
+.az24 > header,.az24 > section,.az24 > footer {display:block;}
+
