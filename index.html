@@ -331,37 +331,53 @@ footer .foot-ig:hover {color:#adf3d4;}
 footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75rem;line-height:1.65;}
 .about-instagram {text-transform:none !important;letter-spacing:0 !important;line-height:1.5;}
 
-/* Benefícios da personalização: seção solicitada abaixo do portfólio. */
-.benefits-wide { background:#edf2ef; border-block:1px solid #dbe6df; }
-.benefits-wide .section { padding-block:clamp(3.7rem,6vw,6rem); }
-.benefits-marker { width:3.4rem; height:4px; background:#69d99b; margin:0 auto 1.5rem; border-radius:2px; }
-.benefits-title { font-family:var(--font-display); font-size:clamp(2.25rem,4vw,3.45rem); font-weight:500; line-height:1.08; text-align:center; letter-spacing:.015em; margin:0 auto 2.6rem; max-width:58rem; color:#18372e; }
-.benefits-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border:1px solid #d0ddd5; background:#f4f7f5; }
-.benefit-card { min-width:0; text-align:center; padding:2.5rem 1.4rem 2.25rem; border-right:1px solid #d0ddd5; position:relative; }
+/* Benefícios: quatro cards no desktop e carrossel compacto em telas menores. */
+.benefits-wide { background:#edf3ee; border-block:1px solid #dce8df; }
+.benefits-wide .section { padding-block:clamp(3rem,5vw,4.8rem); }
+.benefits-marker { width:3.1rem; height:4px; background:#69d99b; margin:0 auto 1.15rem; border-radius:4px; }
+.benefits-title { font-family:var(--font-display); font-size:clamp(2.05rem,3.6vw,3rem); font-weight:500; line-height:1.12; text-align:center; letter-spacing:.005em; margin:0 auto 2rem; max-width:58rem; color:#18372e; }
+.benefits-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border:1px solid #d8e5dc; background:#fff; border-radius:16px; overflow:hidden; }
+.benefit-card { min-width:0; min-height:318px; display:flex; flex-direction:column; align-items:center; text-align:center; padding:1.9rem 1.05rem 1.5rem; border-right:1px solid #d8e5dc; position:relative; background:#fff; }
 .benefit-card:last-child { border-right:0; }
-.benefit-card:nth-child(3)::after { content:""; position:absolute; left:0; right:0; bottom:-1px; height:3px; background:#6ddb9d; }
-.benefit-icon { display:block; width:3.35rem; height:3.35rem; margin:0 auto 1.2rem; fill:none; stroke:#65b8eb; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+.benefit-card:nth-child(3)::after { content:""; position:absolute; left:0; right:0; bottom:0; height:3px; background:#67d99a; }
+.benefit-icon { display:block; width:2.75rem; height:2.75rem; flex-shrink:0; margin:0 auto .9rem; fill:none; stroke:#65b8eb; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
 .benefit-card:nth-child(n+3) .benefit-icon { stroke:#67d794; }
-.benefit-card h3 { color:#193a31; font-family:var(--font-display); font-size:1.85rem; line-height:1.15; font-weight:500; min-height:2.45rem; display:flex; align-items:center; justify-content:center; }
-.benefit-card p { font-size:.91rem; color:#516961; min-height:3.2rem; line-height:1.5; margin:.65rem auto 1rem; max-width:17rem; }
-.benefit-rule { width:2.3rem; height:2px; background:#65d99a; margin:0 auto 1.15rem; }
-.benefit-points { list-style:none; margin:0; padding:0; font-size:.78rem; color:#29453c; text-transform:uppercase; letter-spacing:.015em; }
-.benefit-points li { padding:.8rem .05rem; border-bottom:1px solid #dce6df; }
-.benefit-points li:last-child { border-bottom:0; }
+.benefit-card h3 { color:#193a31; font-family:var(--font-display); font-size:1.65rem; line-height:1.2; font-weight:500; min-height:2.35rem; display:flex; align-items:center; justify-content:center; }
+.benefit-card p { font-size:.87rem; color:#516961; line-height:1.45; margin:.45rem auto .8rem; max-width:17rem; }
+.benefit-rule { width:2rem; height:2px; background:#65d99a; margin:.15rem auto 1rem; }
+.benefit-points { list-style:none; margin:auto 0 0; padding:0; display:flex; flex-wrap:wrap; gap:.45rem; align-items:center; justify-content:center; font-size:.69rem; color:#315248; text-transform:uppercase; letter-spacing:.01em; }
+.benefit-points li { background:#eef8f2; border:1px solid #deeee3; border-radius:99px; padding:.52rem .65rem; line-height:1.25; }
+.benefit-controls { display:none; align-items:center; justify-content:center; gap:1.2rem; margin-top:.85rem; }
+.benefit-nav { width:2.55rem; height:2.55rem; border-radius:50%; border:1px solid #bed5c8; color:#184c3b; background:white; display:grid; place-items:center; cursor:pointer; }
+.benefit-nav svg {width:1.15rem;height:1.15rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.benefit-nav:disabled {opacity:.35;cursor:default;}
+.benefit-dots {display:flex;align-items:center;justify-content:center;gap:.45rem;}
+.benefit-dot {height:.53rem;width:.53rem;border:0;border-radius:99px;background:#b9d3c4;cursor:pointer;padding:0;transition:width .2s,background .2s;}
+.benefit-dot.is-active {width:1.35rem;background:#21805e;}
+.benefit-nav:focus-visible,.benefit-dot:focus-visible {outline:3px solid #54b98a;outline-offset:3px;}
 @media(max-width:1023px) {
- .benefits-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
- .benefit-card:nth-child(2) { border-right:0; }
- .benefit-card:nth-child(-n+2) { border-bottom:1px solid #d0ddd5; }
+ .benefits-wide .section {padding-block:2.8rem 3rem;}
+ .benefits-title {max-width:36rem;margin-bottom:1.55rem;}
+ .benefits-grid {display:flex;gap:12px;border:0;border-radius:0;background:transparent;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;scroll-padding-inline:2px;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:2px 2px 12px;}
+ .benefits-grid::-webkit-scrollbar {display:none;}
+ .benefit-card {flex:0 0 min(66%,380px);min-height:292px;border:1px solid #d7e8dc;border-radius:17px;box-shadow:0 5px 17px rgba(10,56,36,.06);scroll-snap-align:start;scroll-snap-stop:always;}
+ .benefit-card:last-child {border-right:1px solid #d7e8dc;}
+ .benefit-controls {display:flex;}
 }
-@media(max-width:579px) {
- .benefits-grid { grid-template-columns:1fr; }
- .benefit-card { border-right:0; border-bottom:1px solid #d0ddd5; padding:2rem 1.5rem 1.6rem; }
- .benefit-card:last-child { border-bottom:0; }
- .benefit-card h3 { min-height:0; font-size:2rem; }
- .benefit-card p { min-height:0; margin-bottom:1rem; }
- .benefits-title { margin-bottom:2.1rem; font-size:2.3rem; }
- .benefit-points { font-size:.76rem; }
+@media(max-width:600px) {
+ .benefits-wide .section {padding-block:2.35rem 2.5rem;}
+ .benefits-marker {margin-bottom:.95rem;}
+ .benefits-title {font-size:clamp(1.7rem,6.7vw,2.15rem);max-width:22rem;line-height:1.14;margin-bottom:1.35rem;}
+ .benefit-card {flex-basis:calc(100% - 35px);min-height:278px;padding:1.45rem 1rem 1.35rem;}
+ .benefit-icon {width:2.7rem;height:2.7rem;margin-bottom:.8rem;}
+ .benefit-card h3 {font-size:1.65rem;min-height:0;}
+ .benefit-card p {font-size:.88rem;min-height:0;margin:.5rem 0 .8rem;}
+ .benefit-rule {margin:0 auto .9rem;}
+ .benefit-points {font-size:.69rem;gap:.4rem;}
+ .benefit-points li {padding:.5rem .64rem;}
 }
+@media(prefers-reduced-motion:reduce) {.benefit-dot {transition:none;}}
+
 </style>
 <meta property="og:title" content="Páscoa 2027 | Azure Embalagens">
 <meta property="og:description" content="Embalagens personalizadas para sua marca a partir de 200 unidades.">
@@ -423,7 +439,7 @@ footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75
     <div class="wrap section">
       <div class="benefits-marker" aria-hidden="true"></div>
       <h2 class="benefits-title" id="benefits-title">Principais Benefícios de Personalizar</h2>
-      <div class="benefits-grid">
+      <div class="benefits-grid" id="benefits-grid" role="region" aria-roledescription="carrossel" aria-label="Benefícios de personalizar embalagens" tabindex="0">
         <article class="benefit-card">
           <svg class="benefit-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M17 39v-9c-5-3-8-8-8-15C9 7 16 3 24 3c10 0 17 7 17 17l4 7-6 3v9h-9"/><path d="M23.8 14.5c-2-3-6.5-.8-6.5 2.5 0 3.5 6.5 8.3 6.5 8.3s6.5-4.8 6.5-8.3c0-3.3-4.5-5.5-6.5-2.5Z"/></svg>
           <h3>Diferenciação</h3><p>Diferencie-se da concorrência.</p><div class="benefit-rule"></div>
@@ -444,6 +460,12 @@ footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75
           <h3>Experiência</h3><p>Crie uma experiência marcante.</p><div class="benefit-rule"></div>
           <ul class="benefit-points"><li>Presente mais especial</li><li>Aumento da satisfação</li><li>Criação de lembrança</li></ul>
         </article>
+      </div>
+
+      <div class="benefit-controls" aria-label="Navegação dos benefícios">
+        <button type="button" class="benefit-nav" id="benefits-prev" aria-label="Benefício anterior"><svg><use href="#i-left"/></svg></button>
+        <div class="benefit-dots" id="benefits-dots" aria-label="Escolher benefício"></div>
+        <button type="button" class="benefit-nav" id="benefits-next" aria-label="Próximo benefício"><svg><use href="#i-right"/></svg></button>
       </div>
     </div>
   </section>
@@ -883,6 +905,56 @@ $("marquee").innerHTML = words.map((w) => `<span>${w} <b>•</b></span>`).join("
   const observer = new MutationObserver(check);
   observer.observe(container, { childList: true, subtree: true });
   check();
+})();
+
+
+/* Carrossel dos benefícios: swipe nativo no celular, setas e indicadores. */
+(function () {
+  const grid = document.getElementById("benefits-grid");
+  const dots = document.getElementById("benefits-dots");
+  const prev = document.getElementById("benefits-prev");
+  const next = document.getElementById("benefits-next");
+  if (!grid || !dots || !prev || !next) return;
+  const cards = Array.from(grid.querySelectorAll(".benefit-card"));
+  dots.innerHTML = cards.map((card, i) => '<button type="button" class="benefit-dot" aria-label="Mostrar benefício ' + (i + 1) + ': ' + card.querySelector("h3").textContent.trim() + '"></button>').join("");
+  const buttons = Array.from(dots.querySelectorAll("button"));
+  let active = 0;
+  const setActive = (i) => {
+    active = Math.max(0, Math.min(cards.length - 1, i));
+    buttons.forEach((dot, n) => {
+      dot.classList.toggle("is-active", n === active);
+      dot.setAttribute("aria-current", n === active ? "true" : "false");
+    });
+    prev.disabled = active === 0;
+    next.disabled = active === cards.length - 1;
+  };
+  const moveTo = (i) => {
+    const target = Math.max(0, Math.min(cards.length - 1, i));
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    grid.scrollTo({left:cards[target].offsetLeft - cards[0].offsetLeft,behavior:reduce?"auto":"smooth"});
+    setActive(target);
+  };
+  prev.addEventListener("click", () => moveTo(active - 1));
+  next.addEventListener("click", () => moveTo(active + 1));
+  buttons.forEach((b, i) => b.addEventListener("click", () => moveTo(i)));
+  let pending = false;
+  const sync = () => {
+    if (window.matchMedia("(min-width: 1024px)").matches) { setActive(0); return; }
+    const offset = grid.scrollLeft;
+    let best = 0, bestDistance = Infinity;
+    cards.forEach((c, i) => {
+      const d = Math.abs(offset - (c.offsetLeft - cards[0].offsetLeft));
+      if (d < bestDistance) { best = i; bestDistance = d; }
+    });
+    setActive(best);
+  };
+  grid.addEventListener("scroll", () => {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(() => {pending = false;sync();});
+  }, {passive:true});
+  window.addEventListener("resize", sync);
+  setActive(0);
 })();
 
 $("year").textContent = new Date().getFullYear();
