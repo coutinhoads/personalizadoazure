@@ -330,6 +330,38 @@ footer .foot-ig svg {height:1.12rem;width:1.12rem;}
 footer .foot-ig:hover {color:#adf3d4;}
 footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75rem;line-height:1.65;}
 .about-instagram {text-transform:none !important;letter-spacing:0 !important;line-height:1.5;}
+
+/* Benefícios da personalização: seção solicitada abaixo do portfólio. */
+.benefits-wide { background:#edf2ef; border-block:1px solid #dbe6df; }
+.benefits-wide .section { padding-block:clamp(3.7rem,6vw,6rem); }
+.benefits-marker { width:3.4rem; height:4px; background:#69d99b; margin:0 auto 1.5rem; border-radius:2px; }
+.benefits-title { font-family:var(--font-display); font-size:clamp(2.25rem,4vw,3.45rem); font-weight:500; line-height:1.08; text-align:center; letter-spacing:.015em; margin:0 auto 2.6rem; max-width:58rem; color:#18372e; }
+.benefits-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border:1px solid #d0ddd5; background:#f4f7f5; }
+.benefit-card { min-width:0; text-align:center; padding:2.5rem 1.4rem 2.25rem; border-right:1px solid #d0ddd5; position:relative; }
+.benefit-card:last-child { border-right:0; }
+.benefit-card:nth-child(3)::after { content:""; position:absolute; left:0; right:0; bottom:-1px; height:3px; background:#6ddb9d; }
+.benefit-icon { display:block; width:3.35rem; height:3.35rem; margin:0 auto 1.2rem; fill:none; stroke:#65b8eb; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+.benefit-card:nth-child(n+3) .benefit-icon { stroke:#67d794; }
+.benefit-card h3 { color:#193a31; font-family:var(--font-display); font-size:1.85rem; line-height:1.15; font-weight:500; min-height:2.45rem; display:flex; align-items:center; justify-content:center; }
+.benefit-card p { font-size:.91rem; color:#516961; min-height:3.2rem; line-height:1.5; margin:.65rem auto 1rem; max-width:17rem; }
+.benefit-rule { width:2.3rem; height:2px; background:#65d99a; margin:0 auto 1.15rem; }
+.benefit-points { list-style:none; margin:0; padding:0; font-size:.78rem; color:#29453c; text-transform:uppercase; letter-spacing:.015em; }
+.benefit-points li { padding:.8rem .05rem; border-bottom:1px solid #dce6df; }
+.benefit-points li:last-child { border-bottom:0; }
+@media(max-width:1023px) {
+ .benefits-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .benefit-card:nth-child(2) { border-right:0; }
+ .benefit-card:nth-child(-n+2) { border-bottom:1px solid #d0ddd5; }
+}
+@media(max-width:579px) {
+ .benefits-grid { grid-template-columns:1fr; }
+ .benefit-card { border-right:0; border-bottom:1px solid #d0ddd5; padding:2rem 1.5rem 1.6rem; }
+ .benefit-card:last-child { border-bottom:0; }
+ .benefit-card h3 { min-height:0; font-size:2rem; }
+ .benefit-card p { min-height:0; margin-bottom:1rem; }
+ .benefits-title { margin-bottom:2.1rem; font-size:2.3rem; }
+ .benefit-points { font-size:.76rem; }
+}
 </style>
 <meta property="og:title" content="Páscoa 2027 | Azure Embalagens">
 <meta property="og:description" content="Embalagens personalizadas para sua marca a partir de 200 unidades.">
@@ -387,6 +419,35 @@ footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75
     <div class="center"><button type="button" class="btn btn-more" id="show-more">Ver mais embalagens</button></div>
   </section>
 
+
+  <section class="benefits-wide" id="beneficios-personalizacao" aria-labelledby="benefits-title">
+    <div class="wrap section">
+      <div class="benefits-marker" aria-hidden="true"></div>
+      <h2 class="benefits-title" id="benefits-title">Principais Benefícios de Personalizar</h2>
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <svg class="benefit-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M17 39v-9c-5-3-8-8-8-15C9 7 16 3 24 3c10 0 17 7 17 17l4 7-6 3v9h-9"/><path d="M23.8 14.5c-2-3-6.5-.8-6.5 2.5 0 3.5 6.5 8.3 6.5 8.3s6.5-4.8 6.5-8.3c0-3.3-4.5-5.5-6.5-2.5Z"/></svg>
+          <h3>Diferenciação</h3><p>Diferencie-se da concorrência.</p><div class="benefit-rule"></div>
+          <ul class="benefit-points"><li>Destaque</li><li>Memória de marca</li><li>Valor agregado</li></ul>
+        </article>
+        <article class="benefit-card">
+          <svg class="benefit-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 26v-2C8 12 15 6 24 6s16 6 16 18v3"/><path d="M14 28v-4c0-7 3-12 10-12s10 5 10 12v7"/><path d="M20 37V24c0-3 1-6 4-6s4 3 4 6v12c0 4-1 7-3 9"/><path d="M15 35v-6m19 7v-3m-7-19c4 1 7 5 7 10"/></svg>
+          <h3>Identidade</h3><p>Fortalecimento da identidade da marca.</p><div class="benefit-rule"></div>
+          <ul class="benefit-points"><li>Reforço de valores</li><li>Criação de ambiente</li><li>Conexão com o público</li></ul>
+        </article>
+        <article class="benefit-card">
+          <svg class="benefit-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M16 5h16l-4 8h-8l-4-8ZM20 13C13 20 9 29 9 35c0 6 5 8 15 8s15-2 15-8c0-6-4-15-11-22"/><path d="M28 23c-2-2-8-2-8 2 0 5 8 2 8 7 0 4-6 5-9 2m5-14v18"/></svg>
+          <h3>Aumento das vendas</h3><p>Mais dinheiro no seu bolso.</p><div class="benefit-rule"></div>
+          <ul class="benefit-points"><li>Impulso de vendas</li><li>Aumento do ticket médio</li><li>Crie kits especiais</li></ul>
+        </article>
+        <article class="benefit-card">
+          <svg class="benefit-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 20h36v8H6zM10 28v15h28V28M24 20v23"/><path d="M23 20c-12-1-14-10-8-13 6-3 10 8 9 13ZM25 20c12-1 14-10 8-13-6-3-10 8-9 13Z"/></svg>
+          <h3>Experiência</h3><p>Crie uma experiência marcante.</p><div class="benefit-rule"></div>
+          <ul class="benefit-points"><li>Presente mais especial</li><li>Aumento da satisfação</li><li>Criação de lembrança</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <section class="band-soft" id="avaliacoes">
     <div class="wrap section">
