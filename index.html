@@ -2,6 +2,22 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
+<!-- Meta Pixel: visualização da página e envio concluído do formulário Bitrix 176. -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1457204787817260');
+fbq('trackSingle','1457204787817260','PageView');
+window.addEventListener('b24:form:send:success', function(event) {
+  if (String(event.detail?.object?.identification?.id) === '176') {
+    fbq('trackSingle','1457204787817260','Lead');
+  }
+});
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Páscoa 2027 | Azure Embalagens Personalizadas</title>
 <meta name="description" content="Personalize suas embalagens para a Páscoa 2027 a partir de 200 unidades. Conheça modelos, benefícios e solicite um orçamento na Azure.">
