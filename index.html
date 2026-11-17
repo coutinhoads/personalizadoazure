@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Páscoa 2027 | Azure Embalagens Personalizadas</title>
+<meta name="description" content="Personalize suas embalagens para a Páscoa 2027 a partir de 200 unidades. Conheça modelos, benefícios e solicite um orçamento na Azure.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preload" as="image" href="assets/banner.webp" imagesrcset="assets/banner-800.webp 800w, assets/banner.webp 1400w" imagesizes="(min-width: 900px) 56vw, 100vw" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@400;500;600&display=swap"></noscript>
+<style>
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+
+/* Layout: hero em tela cheia com retrato, letreiro, faixas alternadas papel/areia, colunas de até 72rem.
+   Paleta original do projeto (papel quente, tinta preta amarronzada, marrom terroso). Visual claro único, por escolha. */
+:root {
+  color-scheme: light;
+  --background: oklch(0.95 0.018 68);
+  --foreground: oklch(0.18 0.012 48);
+  --card: oklch(0.975 0.012 70);
+  --primary: oklch(0.2 0.015 45);
+  --primary-fg: oklch(0.97 0.012 70);
+  --secondary: oklch(0.88 0.035 58);
+  --secondary-soft: oklch(0.915 0.026 63);
+  --secondary-fg: oklch(0.24 0.025 45);
+  --muted-fg: oklch(0.42 0.035 48);
+  --accent: oklch(0.48 0.08 43);
+  --border: oklch(0.79 0.035 58);
+  --destructive: oklch(0.577 0.245 27.325);
+  --hero-fg: oklch(0.98 0.008 75);
+  --hero-muted: oklch(0.9 0.018 70);
+  --overlay: oklch(0.12 0.015 45 / 0.62);
+  --scrim: oklch(0.08 0.01 45 / 0.92);
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body: "Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius: 0.375rem;
+}
+[hidden] { display: none !important; }
+* { box-sizing: border-box; border-color: var(--border); }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+a { color: inherit; }
+button { font: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.wrap {
+  max-width: 72rem; margin: 0 auto;
+  padding-left: max(24px, env(safe-area-inset-left, 0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
+}
+.section { padding-block: 4rem; }
+@media (min-width: 768px) { .section { padding-block: 6rem; } }
+.h2 { font-size: 1.875rem; line-height: 1.15; text-align: center; }
+@media (min-width: 768px) { .h2 { font-size: 2.25rem; } }
+.lead { font-size: .875rem; color: var(--muted-fg); text-align: center; margin: 1rem auto 0; max-width: 28rem; line-height: 1.6; }
+.eyebrow { font-size: .75rem; font-weight: 500; letter-spacing: .25em; text-transform: uppercase; color: var(--accent); }
+.icon { width: 1rem; height: 1rem; flex: none; }
+
+/* HERO */
+.hero { position: relative; overflow: hidden; background: var(--primary); color: var(--hero-fg); }
+.hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 52% 38%; }
+.hero::after { content: ""; position: absolute; inset: 0; background: var(--overlay); }
+.hero-inner {
+  position: relative; z-index: 1; min-height: 78svh; display: flex; align-items: flex-end; justify-content: center;
+  padding-block: 5rem 3.5rem;
+}
+@media (min-width: 768px) { .hero-inner { min-height: 84svh; align-items: center; padding-block: 6rem; } }
+.hero-copy { max-width: 36rem; text-align: center; }
+.hero-brand { margin-bottom: 1rem; font-size: .75rem; font-weight: 500; letter-spacing: .35em; text-transform: uppercase; color: var(--hero-muted); }
+.hero h1 { font-size: 3rem; line-height: 1.05; color: var(--hero-fg); }
+@media (min-width: 768px) { .hero h1 { font-size: 4.5rem; } }
+@media (min-width: 1024px) { .hero h1 { font-size: 6rem; } }
+.hero-sub { margin: 1.5rem auto 0; max-width: 28rem; font-size: 1rem; line-height: 1.65; color: var(--hero-muted); }
+@media (min-width: 768px) { .hero-sub { font-size: 1.125rem; } }
+.hero-cta { margin-top: 2rem; }
+@media (min-width: 900px) {
+  .hero > img { left: auto; width: 56%; object-position: 50% 34%; }
+  .hero::after { background: linear-gradient(90deg, var(--primary) 0 44%, oklch(0.2 0.015 45 / .55) 58%, oklch(0.12 0.015 45 / .15) 100%); }
+  .hero-inner { justify-content: flex-start; }
+  .hero-copy { text-align: left; max-width: 31rem; }
+  .hero-sub { margin-left: 0; }
+}
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  border: 0; border-radius: 999px; background: var(--primary); color: var(--primary-fg);
+  padding: .9rem 1.75rem; font-size: .875rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase;
+  text-decoration: none; cursor: pointer; transition: transform .2s ease;
+}
+.btn:hover { transform: scale(1.03); }
+.btn-light { background: var(--hero-fg); color: var(--primary); }
+
+/* MARQUEE */
+.marquee { position: relative; z-index: 1; border-block: 1px solid var(--border); background: var(--secondary); padding-block: .75rem; overflow: hidden; display: flex; }
+.marquee-track { display: flex; flex: none; align-items: center; gap: 2rem; padding-right: 2rem; white-space: nowrap; animation: marquee 30s linear infinite; }
+.marquee span { display: inline-flex; align-items: center; gap: 2rem; font-size: .75rem; font-weight: 500; letter-spacing: .3em; text-transform: uppercase; color: var(--muted-fg); }
+.marquee b { color: var(--accent); font-weight: 400; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ESTILOS */
+.band-card { background: var(--card); border-top: 1px solid var(--border); }
+.styles-viewport { overflow: hidden; padding-bottom: .5rem; touch-action: pan-y; user-select: none; -webkit-user-select: none; cursor: grab; }
+.styles-viewport.dragging { cursor: grabbing; }
+.styles-track { display: flex; width: max-content; will-change: transform; }
+.styles-copy { display: flex; }
+.style-card { width: 15rem; flex: none; padding-right: 1.5rem; }
+@media (min-width: 640px) { .style-card { width: 19rem; } }
+.style-card h3 { margin-top: 1.25rem; font-size: 1.25rem; }
+.style-card p { margin-top: .5rem; font-size: .875rem; line-height: 1.6; color: var(--muted-fg); }
+.style-card a { display: inline-block; margin-top: .75rem; font-size: .8rem; font-weight: 500; color: var(--accent); text-underline-offset: 4px; }
+.ctrls { margin-top: 1.25rem; display: flex; justify-content: center; gap: .75rem; }
+.ctrl {
+  display: grid; place-items: center; width: 2.5rem; height: 2.5rem; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--card); color: var(--foreground); cursor: pointer; transition: background .2s;
+}
+.ctrl:hover { background: var(--secondary); }
+.ctrl svg { width: 1.25rem; height: 1.25rem; }
+
+/* Imagem / espaço reservado */
+.ph { aspect-ratio: 4 / 5; width: 100%; max-width: 100%; border-radius: var(--radius); overflow: hidden; display: block; background: var(--secondary-soft); position: relative; }
+.ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ph svg.art { position: absolute; inset: 0; width: 100%; height: 100%; }
+.ph .ph-label {
+  position: absolute; left: .75rem; right: .75rem; bottom: .7rem; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--muted-fg); text-align: center; line-height: 1.4;
+}
+
+/* PORTFÓLIO */
+.grid-pf { margin-top: 2.5rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+@media (min-width: 768px) { .grid-pf { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; } }
+.pf-item { padding: 0; border: 0; background: none; border-radius: .75rem; overflow: hidden; cursor: zoom-in; display: block; }
+.pf-item .ph { border-radius: .75rem; transition: transform .3s ease; }
+.pf-item:hover .ph { transform: scale(1.04); }
+.center { margin-top: 2.5rem; display: flex; justify-content: center; }
+
+
+/* AVALIAÇÕES */
+.band-soft { background: var(--secondary-soft); border-block: 1px solid var(--border); }
+.reviews { margin-top: 2.5rem; display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 1rem; scrollbar-width: none; }
+.reviews::-webkit-scrollbar { display: none; }
+.review {
+  flex: none; width: 86%; scroll-snap-align: start; min-height: 20rem; display: flex; flex-direction: column;
+  border: 1px solid var(--border); border-radius: .5rem; background: var(--card); padding: 1.5rem;
+}
+@media (min-width: 640px) { .review { width: calc(50% - .5rem); } }
+@media (min-width: 1024px) { .review { width: calc(33.333% - .667rem); } }
+.review-head { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .75rem; }
+.avatar { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 999px; background: var(--secondary); color: var(--secondary-fg); font-size: .875rem; font-weight: 600; }
+.review h3 { font-family: var(--font-body); font-size: 1rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.review time { display: block; margin-top: .2rem; font-size: .75rem; color: var(--muted-fg); }
+.g-badge { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 999px; border: 1px solid var(--border); background: var(--card); box-shadow: 0 1px 2px oklch(0.2 0.015 45 / .08); }
+.g-badge svg { width: 1rem; height: 1rem; }
+.stars { margin-top: 1.25rem; display: flex; gap: .125rem; color: var(--accent); }
+.stars svg { width: 1rem; height: 1rem; }
+.review p { margin-top: 1rem; font-size: .875rem; line-height: 1.65; }
+.reviews-foot { margin-top: 2.25rem; text-align: center; }
+.rating { margin: 0 auto; display: inline-flex; align-items: center; gap: .6rem; padding: .55rem 1.1rem; border: 1px solid var(--border); border-radius: 999px; background: var(--card); color: var(--foreground); text-decoration: none; }
+.rating:hover { border-color: var(--accent); }
+.rating-num { font-family: var(--font-body); font-size: 1.6rem; font-weight: 600; letter-spacing: -.01em; line-height: 1; font-variant-numeric: tabular-nums; }
+.rating-stars { display: flex; gap: .1rem; color: oklch(0.8 0.16 80); }
+.rating-stars svg { width: 1.15rem; height: 1.15rem; }
+.rating-count { font-size: .8rem; color: var(--muted-fg); }
+.rating-g { width: 1.5rem; height: 1.5rem; flex: none; }
+.link-accent { display: inline-flex; align-items: center; gap: .5rem; font-size: .875rem; font-weight: 500; color: var(--accent); text-decoration: none; text-underline-offset: 4px; }
+.link-accent:hover { text-decoration: underline; }
+.small-muted { margin-top: .75rem; font-size: .75rem; color: var(--muted-fg); }
+
+/* SOBRE */
+.about { display: grid; align-items: center; gap: 2.5rem; }
+@media (min-width: 768px) { .about { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 3.5rem; } }
+@media (min-width: 1024px) { .about { gap: 5rem; } }
+.about-img { aspect-ratio: 475 / 511; width: 100%; height: auto; max-width: 100%; border-radius: var(--radius); object-fit: cover; object-position: 50% 0%; display: block; }
+.about-copy { min-width: 0; }
+.about-copy h2 { font-size: 1.875rem; line-height: 1.15; }
+@media (min-width: 768px) { .about-copy h2 { font-size: 2.25rem; } }
+.about-copy p { margin-top: 1.25rem; line-height: 1.7; color: var(--muted-fg); max-width: 38rem; }
+.about-copy .link-accent { margin-top: 1.75rem; letter-spacing: .04em; text-transform: uppercase; }
+
+/* FORMULÁRIO */
+.form-wrap { max-width: 36rem; margin: 0 auto; }
+form { margin-top: 2.5rem; display: grid; gap: 1.25rem; }
+.row2 { display: grid; gap: 1.25rem; }
+@media (min-width: 640px) { .row2 { grid-template-columns: 1fr 1fr; } }
+label { display: block; margin-bottom: .375rem; font-size: .875rem; font-weight: 500; }
+input, select, textarea {
+  width: 100%; border: 1px solid var(--border); border-radius: .5rem; background: var(--card); color: var(--foreground);
+  padding: .75rem 1rem; font: inherit; font-size: .875rem;
+}
+textarea { resize: vertical; min-height: 6rem; }
+select {
+  appearance: none; -webkit-appearance: none; padding-right: 2.5rem; cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b5442' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right .9rem center; background-size: 1rem;
+}
+input::placeholder, textarea::placeholder { color: oklch(0.55 0.03 50); }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.form-error { font-size: .875rem; color: var(--destructive); }
+.btn-block { width: 100%; padding-block: 1rem; white-space: normal; }
+.btn-block:hover { transform: scale(1.02); }
+.sent {
+  border: 1px solid var(--border); border-radius: .5rem; background: var(--card); padding: 1.25rem; text-align: center;
+  display: grid; gap: .75rem; justify-items: center;
+}
+.sent p { font-size: .875rem; color: var(--muted-fg); line-height: 1.6; }
+.btn-wa { background: oklch(0.55 0.15 150); color: oklch(1 0 0); font-size: 1rem; letter-spacing: .06em; padding-block: 1.1rem; }
+.btn-wa .icon-wa { width: 1.4rem; height: 1.4rem; }
+.btn-wa:disabled { opacity: .8; cursor: wait; transform: none; }
+@media (max-width: 440px) { .btn-wa { font-size: .85rem; letter-spacing: .03em; gap: .6rem; padding-inline: 1rem; } .btn-wa .icon-wa { width: 1.25rem; height: 1.25rem; } }
+
+/* RODAPÉ */
+footer { border-top: 1px solid var(--border); }
+.foot { padding-block: 2.5rem; display: flex; flex-direction: column; align-items: center; gap: 1.25rem; text-align: center; }
+.foot-brand { font-family: var(--font-display); font-size: 1.5rem; }
+.foot-row { display: flex; align-items: center; gap: .75rem; }
+.foot-ig { display: inline-grid; place-items: center; color: var(--muted-fg); transition: color .2s; }
+.foot-ig:hover { color: var(--foreground); }
+.foot-ig svg { width: 1.25rem; height: 1.25rem; }
+.foot-links a { color: var(--muted-fg); transition: color .2s; }
+.foot-links a:hover { color: var(--foreground); }
+.foot-links svg { width: 1.25rem; height: 1.25rem; }
+
+/* LIGHTBOX */
+.lightbox { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; background: var(--scrim); padding: 1rem; }
+.lightbox .lb-media { width: min(90vw, calc(85vh * 0.8)); max-height: 85vh; }
+.lightbox .lb-media .ph { border-radius: .5rem; }
+.lb-btn {
+  position: absolute; border: 0; border-radius: 999px; background: oklch(1 0 0 / .12); color: oklch(1 0 0);
+  padding: .5rem; cursor: pointer; display: grid; place-items: center;
+}
+.lb-btn:hover { background: oklch(1 0 0 / .22); }
+.lb-btn svg { width: 1.5rem; height: 1.5rem; }
+.lb-close { top: calc(1rem + env(safe-area-inset-top, 0px)); right: calc(1rem + env(safe-area-inset-right, 0px)); }
+.lb-prev { left: calc(.75rem + env(safe-area-inset-left, 0px)); }
+.lb-next { right: calc(.75rem + env(safe-area-inset-right, 0px)); }
+.lb-caption { position: absolute; bottom: calc(1rem + env(safe-area-inset-bottom, 0px)); left: 1rem; right: 1rem; text-align: center; color: oklch(0.9 0.018 70); font-size: .8rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee-track { animation: none; }
+  .btn, .pf-item .ph { transition: none; }
+}
+
+/* Ajustes exclusivamente de conteúdo e cores da marca Azure; estrutura do modelo preservada. */
+:root {
+  --background: #f6f5ef;
+  --foreground: #1e332f;
+  --card: #fffefa;
+  --primary: #173a35;
+  --primary-fg: #f9fff9;
+  --secondary: #e2f1e9;
+  --secondary-soft: #eaf1ea;
+  --secondary-fg: #193d35;
+  --muted-fg: #556b63;
+  --accent: #16836f;
+  --border: #cfddd4;
+  --overlay: rgba(13,39,34,.64);
+  --scrim: rgba(10,24,21,.92);
+  --hero-fg: #fffef9;
+  --hero-muted: #e7f3ea;
+}
+.brand-logo {width: 158px;height:auto;max-height: 100px;object-fit:contain;object-position:left center;}
+.hero-brand {margin: 0 0 .7rem;letter-spacing:normal;}
+.hero-kicker {color:#a3e5cf;margin:0 0 .75rem;letter-spacing:.18em;}
+.hero h1 {font-size:clamp(3.2rem, 6vw, 5.7rem);max-width:12ch;}
+.hero-sub strong {color:#fff;font-weight:600;}
+.hero-cta {margin-top: 2rem;}
+@media (min-width:900px) {.hero::after {background:linear-gradient(90deg,#173a35 0 39%,rgba(23,58,53,.90) 50%,rgba(23,58,53,.14) 90%)} }
+@media (max-width:899px) {
+ .hero > img {object-position:54% 46%;}
+ .hero::after {background:linear-gradient(0deg,rgba(17,46,41,.94) 0%,rgba(17,46,41,.58) 56%,rgba(17,46,41,.23) 100%)}
+ .brand-logo {margin-inline:auto;}
+ .hero-copy {max-width: 31rem;}
+ .hero h1 {max-width:none;}
+}
+.review .avatar {width:3.25rem;height:3.25rem;overflow:hidden;background:#f5f8f0;}
+.review .avatar img {width:100%;height:100%;object-fit:cover;}
+.quote-mark {font-family:Georgia,serif;font-size:2.75rem;color:var(--accent);line-height:1;}
+.review p {margin-top:1.4rem;}
+.about-img {object-position:center;}
+.btn-more {background:transparent;border:1px solid var(--primary);color:var(--primary);}
+.cta-after-grid {margin-top:1.25rem;}
+.azure-form {margin:2.5rem auto 1rem;min-height:10rem;}
+.form-loading {margin:0 auto;padding:1.5rem 1.25rem;text-align:center;color:var(--muted-fg);font-size:.875rem;background:var(--card);border:1px solid var(--border);border-radius:.5rem;}
+.form-fallback {display:grid;gap:.8rem;text-align:center;margin:1.25rem auto 0;}
+.form-fallback p {color:var(--muted-fg);font-size:.82rem;}
+.form-fallback .btn {max-width:100%;}
+@media(min-width:768px) {.form-fallback .btn {max-width:21rem;margin:auto;}}
+@media(max-width:480px) {.hero-kicker {font-size:.64rem;}.hero h1 {font-size:3.2rem;}.hero-inner {padding-block:5rem 3rem;} }
+</style>
+<meta property="og:title" content="Páscoa 2027 | Azure Embalagens">
+<meta property="og:description" content="Embalagens personalizadas para sua marca a partir de 200 unidades.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="assets/banner.webp">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-msg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="M11.5 2.3a.6.6 0 0 1 1 0l2.6 5.4 5.9.8a.6.6 0 0 1 .3 1l-4.3 4.2 1 5.9a.6.6 0 0 1-.8.6L12 17.4l-5.3 2.8a.6.6 0 0 1-.8-.6l1-5.9-4.3-4.2a.6.6 0 0 1 .3-1l5.9-.8Z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 32 32" fill="currentColor"><path d="M16.04 3C8.85 3 3 8.73 3 15.77c0 2.25.6 4.44 1.75 6.36L3 28.5l6.57-1.69a13.2 13.2 0 0 0 6.47 1.67C23.23 28.48 29 22.75 29 15.71 29 8.73 23.23 3 16.04 3Zm7.59 18.02c-.32.88-1.88 1.69-2.61 1.79-.68.1-1.54.14-2.48-.15-.57-.18-1.3-.42-2.24-.82-3.94-1.67-6.52-5.57-6.72-5.83-.2-.26-1.6-2.09-1.6-3.99 0-1.9 1.01-2.83 1.37-3.22.36-.39.78-.49 1.05-.49h.75c.24 0 .56-.09.88.65.32.75 1.1 2.64 1.2 2.83.1.2.16.42.03.68-.13.26-.2.42-.39.65-.2.23-.41.51-.59.68-.2.2-.4.41-.17.8.23.39 1.02 1.64 2.19 2.66 1.5 1.31 2.77 1.72 3.16 1.92.39.2.62.16.85-.1.23-.26.98-1.12 1.24-1.51.26-.39.52-.33.88-.2.36.13 2.29 1.06 2.68 1.25.39.2.65.29.75.46.1.16.1.94-.22 1.82Z"/></symbol>
+  </defs>
+</svg>
+
+<header class="hero">
+  <img src="assets/banner.webp" srcset="assets/banner-800.webp 800w, assets/banner.webp 1400w" sizes="(min-width: 900px) 56vw, 100vw" width="1400" height="1400" alt="Embalagens personalizadas de Páscoa apresentadas por uma cliente da Azure" fetchpriority="high" decoding="async">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <div class="hero-brand"><img src="assets/logo-azure.png" width="236" height="146" alt="Azure Personalizados" class="brand-logo"></div>
+      <p class="eyebrow hero-kicker">EMBALAGENS PERSONALIZADAS · PÁSCOA 2027</p>
+      <h1>Personalize suas embalagens</h1>
+      <p class="hero-sub">Para você que sempre sonhou em personalizar suas embalagens: essa é a hora! <strong>A partir de 200 unidades.</strong></p>
+      <a class="btn btn-light hero-cta" href="#orcamento">Quero personalizar</a>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+</header>
+
+<main>
+  <section class="band-card">
+    <div class="wrap section">
+      <h2 class="h2" style="margin-bottom:2.5rem">Por que personalizar suas embalagens?</h2>
+      <div id="styles" aria-label="Benefícios das embalagens personalizadas">
+        <div class="styles-viewport" id="styles-viewport"><div class="styles-track" id="styles-track"></div></div>
+        <div class="ctrls">
+          <button type="button" class="ctrl" id="styles-prev" aria-label="Estilo anterior"><svg><use href="#i-left"/></svg></button>
+          <button type="button" class="ctrl" id="styles-next" aria-label="Próximo estilo"><svg><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="portfolio">
+    <h2 class="h2">Embalagens que transformam a apresentação</h2>
+    <p class="lead">Inspire-se em modelos reais de embalagens personalizadas.</p>
+    <div class="grid-pf" id="portfolio-grid"></div>
+    <div class="center"><button type="button" class="btn btn-more" id="show-more">Ver mais embalagens</button></div>
+    <div class="center cta-after-grid"><a class="btn" href="#orcamento">Quero personalizar minhas embalagens</a></div>
+  </section>
+
+
+  <section class="band-soft" id="avaliacoes">
+    <div class="wrap section">
+      <div style="max-width:42rem;margin:0 auto;text-align:center">
+        <p class="eyebrow">CLIENTES AZURE</p>
+        <h2 class="h2" style="margin-top:.75rem">Depoimentos de clientes</h2>
+        <p class="lead" style="max-width:none">Histórias de quem escolheu personalizar as embalagens com a Azure.</p>
+      </div>
+      <div id="reviews-box">
+        <div class="reviews" id="reviews" aria-label="Depoimentos de clientes Azure"></div>
+        <div class="ctrls" style="margin-top:1rem">
+          <button type="button" class="ctrl" id="rev-prev" aria-label="Depoimento anterior"><svg><use href="#i-left"/></svg></button>
+          <button type="button" class="ctrl" id="rev-next" aria-label="Próximo depoimento"><svg><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="sobre">
+    <div class="about">
+      <img class="about-img" src="assets/quem-sou.webp" srcset="assets/quem-sou-720.webp 720w, assets/quem-sou.webp 1000w" sizes="(min-width: 768px) 55vw, 100vw" width="1000" height="1000" alt="Embalagem personalizada Azure, com destaque para a marca" loading="lazy" decoding="async">
+      <div class="about-copy">
+        <p class="eyebrow">SUA MARCA EM CADA DETALHE</p>
+        <h2>Uma apresentação que valoriza seu produto</h2>
+        <p>Embalagens personalizadas ajudam a diferenciar sua marca da concorrência, reforçar a identidade visual e valorizar cada entrega.</p>
+        <p>Além de destacar seus produtos, uma apresentação especial cria memória de marca e fortalece a conexão com o público.</p>
+        <p>Na Páscoa, você pode criar kits especiais, tornar o presente ainda mais marcante e proporcionar uma experiência que vai além do produto.</p>
+        <a class="link-accent" href="#orcamento">Personalize a partir de 200 unidades <svg class="icon"><use href="#i-right"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-soft" id="orcamento" style="border-bottom:0">
+    <div class="wrap section">
+      <div class="form-wrap">
+        <p class="eyebrow" style="text-align:center">PÁSCOA 2027</p>
+        <h2 class="h2" style="margin-top:.7rem">Faça seu orçamento</h2>
+        <p class="lead" style="max-width:none">Personalize suas embalagens a partir de 200 unidades. Preencha o formulário oficial da Azure para falar sobre seu projeto.</p>
+        <div class="azure-form" id="azure-form" aria-label="Formulário de orçamento da Azure Embalagens">
+          <div class="form-loading" id="form-loading">Carregando formulário de orçamento...</div>
+          <script data-b24-form="inline/176/slw41m" data-skip-moving="true">
+          (function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn.bitrix24.com.br/b12993613/crm/form/loader_176.js');
+          </script>
+        </div>
+        <div class="form-fallback">
+          <p>Se o formulário não aparecer, acesse a versão oficial.</p>
+          <a class="btn btn-block" href="https://personalize.azureembalagens.com.br/pascoa2027/#b9726" target="_blank" rel="noopener noreferrer">Abrir formulário oficial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer>
+  <div class="wrap foot">
+    <div class="foot-row">
+      <span class="foot-brand">Azure Embalagens</span>
+    </div>
+    <p class="small-muted" style="margin:0">Embalagens personalizadas para sua marca. © <span id="year">2026</span> Azure Embalagens.</p>
+  </div>
+</footer>
+
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+  <button type="button" class="lb-btn lb-close" id="lb-close" aria-label="Fechar"><svg><use href="#i-x"/></svg></button>
+  <button type="button" class="lb-btn lb-prev" id="lb-prev" aria-label="Foto anterior"><svg><use href="#i-left"/></svg></button>
+  <div class="lb-media" id="lb-media"></div>
+  <button type="button" class="lb-btn lb-next" id="lb-next" aria-label="Próxima foto"><svg><use href="#i-right"/></svg></button>
+  <p class="lb-caption" id="lb-caption"></p>
+</div>
+
+<script>
+/* Conteúdo da landing page Azure, extraído do ZIP original da marca. */
+const site = {
+  "marquee": [
+    "PERSONALIZAÇÃO",
+    "IDENTIDADE",
+    "DIFERENCIAÇÃO",
+    "VALOR AGREGADO",
+    "EXPERIÊNCIA",
+    "MEMÓRIA DE MARCA",
+    "PÁSCOA 2027"
+  ],
+  "estilos": [
+    {
+      "titulo": "Diferenciação",
+      "texto": "Diferencie-se da concorrência. Destaque seus produtos, crie memória de marca e agregue valor.",
+      "imagem": "assets/estilo-01.webp",
+      "alt": "Embalagem para ovo de Páscoa personalizada com flores"
+    },
+    {
+      "titulo": "Identidade",
+      "texto": "Fortaleça a identidade da sua marca, reforce valores e crie conexão com o público.",
+      "imagem": "assets/estilo-02.webp",
+      "alt": "Caixa personalizada nas mãos de profissional da Azure"
+    },
+    {
+      "titulo": "Aumento das vendas",
+      "texto": "Monte kits especiais, valorize o presente e trabalhe o tíquete médio.",
+      "imagem": "assets/estilo-03.webp",
+      "alt": "Caixa personalizada verde com doces especiais"
+    },
+    {
+      "titulo": "Experiência",
+      "texto": "Crie uma experiência marcante e transforme cada entrega em uma lembrança especial.",
+      "imagem": "assets/estilo-04.webp",
+      "alt": "Caixas para doces apresentadas abertas com brigadeiros"
+    }
+  ],
+  "portfolio": [
+    {
+      "src": "assets/portfolio-01.webp",
+      "alt": "Exemplo 1 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-02.webp",
+      "alt": "Exemplo 2 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-03.webp",
+      "alt": "Exemplo 3 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-04.webp",
+      "alt": "Exemplo 4 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-05.webp",
+      "alt": "Exemplo 5 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-06.webp",
+      "alt": "Exemplo 6 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-07.webp",
+      "alt": "Exemplo 7 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-08.webp",
+      "alt": "Exemplo 8 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-09.webp",
+      "alt": "Exemplo 9 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-10.webp",
+      "alt": "Exemplo 10 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-11.webp",
+      "alt": "Exemplo 11 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-12.webp",
+      "alt": "Exemplo 12 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-13.webp",
+      "alt": "Exemplo 13 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-14.webp",
+      "alt": "Exemplo 14 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-15.webp",
+      "alt": "Exemplo 15 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-16.webp",
+      "alt": "Exemplo 16 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-17.webp",
+      "alt": "Exemplo 17 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-18.webp",
+      "alt": "Exemplo 18 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-19.webp",
+      "alt": "Exemplo 19 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-20.webp",
+      "alt": "Exemplo 20 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-21.webp",
+      "alt": "Exemplo 21 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-22.webp",
+      "alt": "Exemplo 22 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-23.webp",
+      "alt": "Exemplo 23 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-24.webp",
+      "alt": "Exemplo 24 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-25.webp",
+      "alt": "Exemplo 25 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-26.webp",
+      "alt": "Exemplo 26 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-27.webp",
+      "alt": "Exemplo 27 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-28.webp",
+      "alt": "Exemplo 28 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-29.webp",
+      "alt": "Exemplo 29 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-30.webp",
+      "alt": "Exemplo 30 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-31.webp",
+      "alt": "Exemplo 31 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-32.webp",
+      "alt": "Exemplo 32 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-33.webp",
+      "alt": "Exemplo 33 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-34.webp",
+      "alt": "Exemplo 34 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-35.webp",
+      "alt": "Exemplo 35 de embalagem personalizada Azure"
+    },
+    {
+      "src": "assets/portfolio-36.webp",
+      "alt": "Exemplo 36 de embalagem personalizada Azure"
+    }
+  ],
+  "avaliacoes": [
+    {
+      "nome": "Adrielly",
+      "empresa": "Encantos Brigaderia",
+      "imagem": "assets/depoimento-1.webp",
+      "texto": "“Então, pra mim, é e sempre será a melhor! Conheci a Azure pelo Instagram, e até então sempre compro todas as minhas embalagens com eles. Eu sou até suspeita de falar, porque praticamente a minha loja inteira é feita na Azure e eu sou uma das que mais fazem personalizados e algum lançamento que eu faço aqui eu pego a caixinha primeiro para depois lançar o produto.”"
+    },
+    {
+      "nome": "Maria Doceria",
+      "empresa": "Cliente Azure",
+      "imagem": "assets/depoimento-2.webp",
+      "texto": "“Obrigada pelo atendimento de vocês!! Ficamos meio receosos no início em encomendar tantas caixinhas personalizadas, mas agora com todas prontas estamos muito felizes!! Além de terem ficado lindas, nos ajudaram muito em Kits para presentes, na venda dos brigadeiros, e na entrega dos pedidos com o saco maravilhoso pro ifood!!! Agradeço a criação de arte de vocês que conseguiu fazer do jeitinho que queríamos!! Obrigada!!”"
+    },
+    {
+      "nome": "Roberta Lopes Confeitaria",
+      "empresa": "Cliente Azure",
+      "imagem": "assets/depoimento-3.webp",
+      "texto": "“A Azure é uma empresa que veio para mudar toda minha visão de embalagem, de como entregar o produto final para o meu cliente, de percepção de valores e de experiência. Uma embalagem personalizada, bonita e com qualidade, e além de tudo ela é própria para alimentos e respeita o meio ambiente. Isso pra mim, vale muito a pena!”"
+    }
+  ]
+};
+
+const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+/* Fallback visual para eventual mídia indisponível. */
+const motifs = {
+  floral: '<g><path d="M100 205 C 98 170 104 140 100 110"/><path d="M100 168 C 80 160 70 146 72 132 C 88 136 98 150 100 168"/><path d="M101 150 C 120 142 130 128 128 114 C 112 118 102 132 101 150"/>' +
+    [0,60,120,180,240,300].map(a => `<ellipse cx="100" cy="88" rx="9" ry="20" transform="rotate(${a} 100 108)"/>`).join("") + '<circle cx="100" cy="108" r="5"/></g>',
+  ramo: '<g><path d="M70 210 C 95 170 110 120 135 60"/>' +
+    [0,1,2,3,4,5].map(i => { const y = 190 - i * 24, x = 79 + i * 9.6; return `<path d="M${x} ${y} c -22 -4 -30 -16 -30 -26 c 16 2 28 12 30 26"/><path d="M${x+3} ${y-8} c 20 -8 26 -22 24 -32 c -14 4 -24 16 -24 32"/>`; }).join("") + '</g>',
+  pata: '<g><ellipse cx="100" cy="140" rx="26" ry="22"/><ellipse cx="68" cy="104" rx="10" ry="14" transform="rotate(-20 68 104)"/><ellipse cx="90" cy="88" rx="10" ry="15"/><ellipse cx="112" cy="88" rx="10" ry="15"/><ellipse cx="132" cy="104" rx="10" ry="14" transform="rotate(20 132 104)"/><path d="M60 180 C 80 196 120 196 140 180"/></g>',
+  bussola: '<g><circle cx="100" cy="125" r="52"/><circle cx="100" cy="125" r="44" stroke-dasharray="2 5"/><path d="M100 65 L110 125 L100 185 L90 125 Z"/><path d="M40 125 L100 117 L160 125 L100 133 Z"/><circle cx="100" cy="125" r="4"/></g>',
+  sol: '<g><circle cx="100" cy="120" r="22"/>' + Array.from({ length: 16 }, (_, i) => { const a = i * Math.PI / 8, r1 = 32, r2 = i % 2 ? 52 : 66; return `<line x1="${(100 + r1 * Math.cos(a)).toFixed(1)}" y1="${(120 + r1 * Math.sin(a)).toFixed(1)}" x2="${(100 + r2 * Math.cos(a)).toFixed(1)}" y2="${(120 + r2 * Math.sin(a)).toFixed(1)}"/>`; }).join("") + '</g>',
+  linhas: '<g><path d="M60 60 C 140 90 50 130 120 160 S 90 200 130 215"/><path d="M80 50 C 160 85 70 125 140 155"/><path d="M50 90 C 110 110 60 150 100 190"/></g>',
+  lua: '<g><path d="M120 70 A 55 55 0 1 0 120 180 A 42 42 0 1 1 120 70 Z"/><circle cx="140" cy="90" r="2"/><circle cx="150" cy="130" r="1.5"/><circle cx="132" cy="160" r="1.5"/><path d="M146 108 l4 -8 l4 8 l-4 8 z"/></g>',
+  geo: '<g><circle cx="100" cy="125" r="50"/><polygon points="100,75 143,150 57,150"/><polygon points="100,175 57,100 143,100"/><circle cx="100" cy="125" r="18"/><line x1="100" y1="55" x2="100" y2="195"/></g>',
+  letra: '<g><path d="M55 140 C 60 110 75 105 78 120 C 80 135 70 150 82 140 C 95 128 98 112 105 124 C 110 134 112 146 122 132 C 130 120 136 118 140 128 C 143 136 148 140 152 132"/><path d="M60 160 L140 160" stroke-dasharray="1 6"/></g>',
+};
+function placeholder(motivo, label) {
+  return `<span class="ph" role="img" aria-label="${esc(label)}">
+    <svg class="art" viewBox="0 0 200 250" preserveAspectRatio="xMidYMid meet" fill="none" stroke="oklch(0.36 0.03 48)" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${motifs[motivo] || motifs.ramo}</svg>
+    <span class="ph-label">Imagem indisponível</span></span>`;
+}
+/* Fotografias têm versões -480 para telas pequenas. */
+function srcset(src, sizes) {
+  if (!sizes || !/^assets\/(portfolio|estilo)-[\w-]+\.webp$/.test(src)) return "";
+  return ` srcset="${src.replace(/\.webp$/, "-480.webp")} 480w, ${src} 900w" sizes="${sizes}"`;
+}
+function media(src, alt, motivo, lazy = true, sizes = "") {
+  return src ? `<span class="ph"><img src="${esc(src)}"${srcset(src, sizes)} alt="${esc(alt)}" ${lazy ? 'loading="lazy"' : ""} decoding="async" draggable="false"></span>` : placeholder(motivo, alt);
+}
+
+/* Letreiro */
+const words = [...site.marquee, ...site.marquee, ...site.marquee, ...site.marquee];
+$("marquee").innerHTML = words.map((w) => `<span>${w} <b>•</b></span>`).join("");
+
+/* Estilos: carrossel contínuo, pausa no hover, arrasto e setas */
+(function () {
+  const track = $("styles-track"), viewport = $("styles-viewport");
+  const card = (e) => `<article class="style-card">${media(e.imagem, e.alt || e.titulo, e.motivo, true, "(min-width: 640px) 19rem, 15rem")}<h3>${e.titulo}</h3><p>${e.texto}</p></article>`;
+  track.innerHTML = [0, 1, 2, 3].map((c) => `<div class="styles-copy"${c ? ' aria-hidden="true"' : ""}>${site.estilos.map(card).join("")}</div>`).join("");
+  track.querySelectorAll('.styles-copy[aria-hidden] a').forEach((a) => a.tabIndex = -1);
+  const copy = track.firstElementChild;
+  const st = { paused: false, pos: 0, target: null, drag: null, moved: 0 };
+  /* largura medida só quando muda e animação parada fora da tela: evita reflow a cada quadro */
+  let copyW = copy.offsetWidth, visivel = true;
+  if (window.ResizeObserver) new ResizeObserver(() => { copyW = copy.offsetWidth; }).observe(copy);
+  else window.addEventListener("resize", () => { copyW = copy.offsetWidth; });
+  if (window.IntersectionObserver) new IntersectionObserver((en) => { visivel = en[0].isIntersecting; }, { rootMargin: "100px" }).observe(viewport);
+  let last = performance.now();
+  function tick(ts) {
+    const dt = Math.min((ts - last) / 1000, 0.1); last = ts;
+    const w = copyW;
+    if (w > 0 && visivel) {
+      if (st.drag) {} else if (st.target !== null) {
+        const d = st.target - st.pos;
+        if (Math.abs(d) < 0.5) { st.pos = st.target; st.target = null; } else st.pos += d * Math.min(1, dt * 9);
+      } else if (!st.paused && !reduced) st.pos += (w / 14) * dt;
+      if (st.pos >= w) { st.pos -= w; if (st.target !== null) st.target -= w; if (st.drag) st.drag.pos -= w; }
+      else if (st.pos < 0) { st.pos += w; if (st.target !== null) st.target += w; if (st.drag) st.drag.pos += w; }
+      track.style.transform = `translate3d(${-st.pos}px,0,0)`;
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+  const step = (dir) => { const c = copy.querySelector("article"); st.target = (st.target ?? st.pos) + dir * (c ? c.offsetWidth : 280); };
+  $("styles-prev").onclick = () => step(-1);
+  $("styles-next").onclick = () => step(1);
+  const box = $("styles");
+  box.addEventListener("mouseenter", () => st.paused = true);
+  box.addEventListener("mouseleave", () => { st.paused = false; st.drag = null; viewport.classList.remove("dragging"); });
+  box.addEventListener("focusin", () => st.paused = true);
+  box.addEventListener("focusout", () => st.paused = false);
+  viewport.addEventListener("pointerdown", (e) => { st.drag = { x: e.clientX, pos: st.pos }; st.target = null; st.moved = 0; viewport.classList.add("dragging"); });
+  viewport.addEventListener("pointermove", (e) => { if (st.drag) { st.moved = Math.abs(e.clientX - st.drag.x); st.pos = st.drag.pos - (e.clientX - st.drag.x); } });
+  const end = () => { st.drag = null; viewport.classList.remove("dragging"); };
+  viewport.addEventListener("pointerup", end);
+  viewport.addEventListener("pointercancel", end);
+  viewport.addEventListener("click", (e) => {
+    const a = e.target.closest("a[data-estilo]");
+    if (!a) return;
+    if (st.moved > 6) { e.preventDefault(); return; }
+    $("estilo").value = a.dataset.estilo;
+  });
+})();
+
+/* Portfólio + lightbox */
+(function () {
+  const grid = $("portfolio-grid");
+  grid.innerHTML = site.portfolio.map((f, i) => `<button type="button" class="pf-item" data-i="${i}" ${i >= 12 ? 'hidden' : ''} aria-label="Ampliar: ${esc(f.alt)}">${media(f.src, f.alt, f.motivo, true, "(min-width: 768px) 23rem, 50vw")}</button>`).join("");
+  const more = $("show-more");
+  more.addEventListener("click", () => {
+    grid.querySelectorAll(".pf-item[hidden]").forEach((el) => {el.hidden = false;});
+    more.hidden = true;
+  });
+  const lb = $("lightbox");
+  let cur = null, opener = null;
+  const n = site.portfolio.length;
+  function show(i) {
+    cur = (i + n) % n;
+    const f = site.portfolio[cur];
+    $("lb-media").innerHTML = media(f.src, f.alt, f.motivo, false);
+    $("lb-caption").textContent = f.alt;
+  }
+  function open(i, btn) { opener = btn; show(i); lb.hidden = false; document.body.style.overflow = "hidden"; $("lb-close").focus(); }
+  function close() { lb.hidden = true; cur = null; document.body.style.overflow = ""; if (opener) opener.focus(); }
+  grid.addEventListener("click", (e) => { const b = e.target.closest(".pf-item"); if (b) open(+b.dataset.i, b); });
+  lb.addEventListener("click", (e) => { if (e.target === lb || e.target.id === "lb-caption") close(); });
+  $("lb-close").onclick = close;
+  $("lb-prev").onclick = (e) => { e.stopPropagation(); show(cur - 1); };
+  $("lb-next").onclick = (e) => { e.stopPropagation(); show(cur + 1); };
+  window.addEventListener("keydown", (e) => {
+    if (cur === null) return;
+    if (e.key === "Escape") close();
+    if (e.key === "ArrowRight") show(cur + 1);
+    if (e.key === "ArrowLeft") show(cur - 1);
+  });
+})();
+
+/* Depoimentos: carrossel com avanço automático a cada 4 s */
+(function () {
+  const box = $("reviews"), wrap = $("reviews-box");
+  if (!site.avaliacoes.length) { wrap.hidden = true; return; }
+  box.innerHTML = site.avaliacoes.map((a) => {
+    const ini = a.nome.split(" ").slice(0, 2).map((p) => p[0]).join("");
+    const avatar = a.imagem ? `<img src="${esc(a.imagem)}" alt="" loading="lazy">` : ini;
+    return `<article class="review"><div class="review-head"><div class="avatar" aria-hidden="true">${avatar}</div><div style="min-width:0"><h3>${esc(a.nome)}</h3><time>${esc(a.empresa)}</time></div><span class="quote-mark" aria-hidden="true">“</span></div><p>${esc(a.texto)}</p></article>`;
+  }).join("");
+  let paused = false;
+  function scroll(dir) {
+    const c = box.querySelector("article"), w = (c ? c.offsetWidth : box.clientWidth) + 16;
+    const atEnd = box.scrollLeft + box.clientWidth >= box.scrollWidth - 8, atStart = box.scrollLeft <= 8;
+    const behavior = reduced ? "auto" : "smooth";
+    if (dir === 1 && atEnd) return box.scrollTo({ left: 0, behavior });
+    if (dir === -1 && atStart) return box.scrollTo({ left: box.scrollWidth, behavior });
+    box.scrollBy({ left: dir * w, behavior });
+  }
+  $("rev-prev").onclick = () => scroll(-1);
+  $("rev-next").onclick = () => scroll(1);
+  ["mouseenter", "focusin", "pointerdown"].forEach((ev) => wrap.addEventListener(ev, () => paused = true));
+  ["mouseleave", "focusout", "pointerup"].forEach((ev) => wrap.addEventListener(ev, () => paused = false));
+  if (!reduced) setInterval(() => { if (!paused && !document.hidden) scroll(1); }, 4000);
+})();
+
+
+/* Remove o aviso quando o formulário oficial do Bitrix24 for incorporado. */
+(function () {
+  const container = document.getElementById("azure-form");
+  const loading = document.getElementById("form-loading");
+  if (!container || !loading || !window.MutationObserver) return;
+  const check = () => {
+    if (container.querySelector("iframe, form, .b24-form, [class*=b24-form]")) {
+      loading.hidden = true;
+      observer.disconnect();
+    }
+  };
+  const observer = new MutationObserver(check);
+  observer.observe(container, { childList: true, subtree: true });
+  check();
+})();
+
+$("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
