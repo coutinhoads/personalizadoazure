@@ -253,7 +253,7 @@ footer { border-top: 1px solid var(--border); }
   .btn, .pf-item .ph { transition: none; }
 }
 
-/* Ajustes exclusivamente de conteúdo e cores da marca Azure; estrutura do modelo preservada. */
+/* Identidade Azure aplicada à estrutura Victoria. Hero com fotografia livre e conteúdo fora da área focal. */
 :root {
   --background: #f6f5ef;
   --foreground: #1e332f;
@@ -271,34 +271,65 @@ footer { border-top: 1px solid var(--border); }
   --hero-fg: #fffef9;
   --hero-muted: #e7f3ea;
 }
-.brand-logo {width: 158px;height:auto;max-height: 100px;object-fit:contain;object-position:left center;}
-.hero-brand {margin: 0 0 .7rem;letter-spacing:normal;}
-.hero-kicker {color:#a3e5cf;margin:0 0 .75rem;letter-spacing:.18em;}
-.hero h1 {font-size:clamp(3.2rem, 6vw, 5.7rem);max-width:12ch;}
-.hero-sub strong {color:#fff;font-weight:600;}
-.hero-cta {margin-top: 2rem;}
-@media (min-width:900px) {.hero::after {background:linear-gradient(90deg,#173a35 0 39%,rgba(23,58,53,.90) 50%,rgba(23,58,53,.14) 90%)} }
-@media (max-width:899px) {
- .hero > img {object-position:54% 46%;}
- .hero::after {background:linear-gradient(0deg,rgba(17,46,41,.94) 0%,rgba(17,46,41,.58) 56%,rgba(17,46,41,.23) 100%)}
- .brand-logo {margin-inline:auto;}
- .hero-copy {max-width: 31rem;}
- .hero h1 {max-width:none;}
-}
+.hero {background:#143a33; isolation:isolate;}
+.hero > img {object-position:center 34%;}
+.hero::after { background:linear-gradient(0deg,#0b2c25 0%,rgba(11,44,37,.96) 12%,rgba(11,44,37,.78) 32%,rgba(11,44,37,.23) 53%,rgba(11,44,37,0) 76%); }
+.hero-inner {min-height: min(790px,92svh);padding-block: 12rem 3rem;align-items:flex-end;}
+.hero-copy {max-width:100%;width:100%;text-align:center;}
+.hero-kicker {color:#abe6d0;letter-spacing:.18em;margin:0 0 .85rem;font-weight:600;line-height:1.5;}
+.hero h1 {font-size:clamp(1.65rem,7.4vw,2.3rem);line-height:1.1;letter-spacing:-.025em;max-width:none;white-space:nowrap;font-weight:500;text-shadow:0 2px 16px rgba(6,25,21,.12);}
+.hero-sub {margin: .9rem auto 0;max-width:30rem;font-size:.96rem;line-height:1.55;color:#f0f7f1;}
+.hero-sub strong {color:#fff;font-weight:600;white-space:nowrap;}
+.hero-cta { margin-top:1.5rem; }
+.hero .btn-light {background: #b9f6d9; color:#123d32; border:1px solid rgba(231,255,244,.45); box-shadow:0 10px 35px rgba(4,18,15,.23),inset 0 1px 0 rgba(255,255,255,.5);border-radius:16px;padding:.65rem .72rem .65rem 1.5rem;gap:1.1rem;text-transform:none;font-weight:600;letter-spacing:.012em;font-size:1rem;min-height:3.5rem;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;}
+.hero .btn-light:hover {background:#d5ffe7;transform:translateY(-2px);box-shadow:0 15px 36px rgba(4,18,15,.3);}
+.hero .btn-light:active {transform:translateY(0);}
+.btn-arrow {display:grid;place-items:center;width:2.25rem;height:2.25rem;border-radius:11px;background:#1a5143;color:#eafff3;flex:none;}
+.btn-arrow .icon {width:1.1rem;height:1.1rem;}
+.btn-more {background:transparent;border:1px solid var(--primary);color:var(--primary);font-size:.82rem;letter-spacing:.08em;padding:.9rem 1.6rem;}
+.btn-more:hover {background:var(--primary);color:#fff;}
 .review .avatar {width:3.25rem;height:3.25rem;overflow:hidden;background:#f5f8f0;}
 .review .avatar img {width:100%;height:100%;object-fit:cover;}
 .quote-mark {font-family:Georgia,serif;font-size:2.75rem;color:var(--accent);line-height:1;}
 .review p {margin-top:1.4rem;}
 .about-img {object-position:center;}
-.btn-more {background:transparent;border:1px solid var(--primary);color:var(--primary);}
-.cta-after-grid {margin-top:1.25rem;}
 .azure-form {margin:2.5rem auto 1rem;min-height:10rem;}
 .form-loading {margin:0 auto;padding:1.5rem 1.25rem;text-align:center;color:var(--muted-fg);font-size:.875rem;background:var(--card);border:1px solid var(--border);border-radius:.5rem;}
 .form-fallback {display:grid;gap:.8rem;text-align:center;margin:1.25rem auto 0;}
 .form-fallback p {color:var(--muted-fg);font-size:.82rem;}
 .form-fallback .btn {max-width:100%;}
 @media(min-width:768px) {.form-fallback .btn {max-width:21rem;margin:auto;}}
-@media(max-width:480px) {.hero-kicker {font-size:.64rem;}.hero h1 {font-size:3.2rem;}.hero-inner {padding-block:5rem 3rem;} }
+@media(min-width:900px) {
+ .hero > img {left:auto;width:55%;object-position:center 34%;}
+ .hero::after {background:linear-gradient(90deg,#12372f 0%,#12372f 33%,rgba(18,55,47,.94) 40%,rgba(18,55,47,.46) 52%,rgba(18,55,47,0) 75%);}
+ .hero-inner {min-height: min(820px,85svh);align-items:center;justify-content:flex-start;padding-block:6rem;}
+ .hero-copy {text-align:left;max-width:59%;width:auto;}
+ .hero h1 {font-size:clamp(2.4rem,4vw,3.5rem);white-space:nowrap;}
+ .hero-sub {margin:1.2rem 0 0;}
+ .hero-cta {margin-top:2rem;}
+}
+@media(max-width:899px) {
+ .hero > img {object-position:51% 17%;}
+ .hero-inner {min-height: min(810px,92svh);padding-block:10rem 3.3rem;}
+}
+@media(max-width:374px) {
+ .hero-kicker {font-size:.59rem;letter-spacing:.11em;}
+ .hero h1 {font-size:clamp(1.55rem,7.3vw,1.75rem);}
+ .hero-sub {font-size:.9rem;}
+ .hero .btn-light {font-size:.94rem;}
+}
+@media(prefers-reduced-motion:reduce) {.hero .btn-light {transition:none;}}
+
+
+/* Rodapé com marca original Azure e Instagram da marca. */
+footer {background:#12372f;border-top:1px solid rgba(255,255,255,.12);color:#eafff3;}
+.foot {gap:.6rem;padding-block:3.1rem 2.4rem;}
+.footer-logo {width:180px;height:auto;object-fit:contain;display:block;margin:0 auto -.2rem;}
+footer .foot-ig {display:inline-flex;gap:.55rem;align-items:center;justify-content:center;text-decoration:none;color:#d8efe4;font-size:.88rem;letter-spacing:.02em;margin-top:.35rem;}
+footer .foot-ig svg {height:1.12rem;width:1.12rem;}
+footer .foot-ig:hover {color:#adf3d4;}
+footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75rem;line-height:1.65;}
+.about-instagram {text-transform:none !important;letter-spacing:0 !important;line-height:1.5;}
 </style>
 <meta property="og:title" content="Páscoa 2027 | Azure Embalagens">
 <meta property="og:description" content="Embalagens personalizadas para sua marca a partir de 200 unidades.">
@@ -326,11 +357,10 @@ footer { border-top: 1px solid var(--border); }
   <img src="assets/banner.webp" srcset="assets/banner-800.webp 800w, assets/banner.webp 1400w" sizes="(min-width: 900px) 56vw, 100vw" width="1400" height="1400" alt="Embalagens personalizadas de Páscoa apresentadas por uma cliente da Azure" fetchpriority="high" decoding="async">
   <div class="wrap hero-inner">
     <div class="hero-copy">
-      <div class="hero-brand"><img src="assets/logo-azure.png" width="236" height="146" alt="Azure Personalizados" class="brand-logo"></div>
-      <p class="eyebrow hero-kicker">EMBALAGENS PERSONALIZADAS · PÁSCOA 2027</p>
+      <p class="eyebrow hero-kicker">PÁSCOA 2027 · AZURE PERSONALIZADOS</p>
       <h1>Personalize suas embalagens</h1>
-      <p class="hero-sub">Para você que sempre sonhou em personalizar suas embalagens: essa é a hora! <strong>A partir de 200 unidades.</strong></p>
-      <a class="btn btn-light hero-cta" href="#orcamento">Quero personalizar</a>
+      <p class="hero-sub">Sua marca em cada detalhe. <strong>A partir de 200 unidades.</strong></p>
+      <a class="btn btn-light hero-cta" href="#orcamento"><span>Solicitar orçamento</span><span class="btn-arrow" aria-hidden="true"><svg class="icon"><use href="#i-right"/></svg></span></a>
     </div>
   </div>
   <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
@@ -355,7 +385,6 @@ footer { border-top: 1px solid var(--border); }
     <p class="lead">Inspire-se em modelos reais de embalagens personalizadas.</p>
     <div class="grid-pf" id="portfolio-grid"></div>
     <div class="center"><button type="button" class="btn btn-more" id="show-more">Ver mais embalagens</button></div>
-    <div class="center cta-after-grid"><a class="btn" href="#orcamento">Quero personalizar minhas embalagens</a></div>
   </section>
 
 
@@ -385,7 +414,7 @@ footer { border-top: 1px solid var(--border); }
         <p>Embalagens personalizadas ajudam a diferenciar sua marca da concorrência, reforçar a identidade visual e valorizar cada entrega.</p>
         <p>Além de destacar seus produtos, uma apresentação especial cria memória de marca e fortalece a conexão com o público.</p>
         <p>Na Páscoa, você pode criar kits especiais, tornar o presente ainda mais marcante e proporcionar uma experiência que vai além do produto.</p>
-        <a class="link-accent" href="#orcamento">Personalize a partir de 200 unidades <svg class="icon"><use href="#i-right"/></svg></a>
+        <a class="link-accent about-instagram" href="https://www.instagram.com/personalizadosazure/" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-ig"/></svg>Conheça nosso Instagram: @personalizadosazure</a>
       </div>
     </div>
   </section>
@@ -414,10 +443,9 @@ footer { border-top: 1px solid var(--border); }
 
 <footer>
   <div class="wrap foot">
-    <div class="foot-row">
-      <span class="foot-brand">Azure Embalagens</span>
-    </div>
-    <p class="small-muted" style="margin:0">Embalagens personalizadas para sua marca. © <span id="year">2026</span> Azure Embalagens.</p>
+    <img src="assets/logo-azure.png" width="236" height="146" class="footer-logo" alt="Azure Personalizados" loading="lazy" decoding="async">
+    <a class="foot-ig" href="https://www.instagram.com/personalizadosazure/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Azure Personalizados: @personalizadosazure"><svg aria-hidden="true"><use href="#i-ig"/></svg><span>@personalizadosazure</span></a>
+    <p class="small-muted foot-note">Embalagens personalizadas para sua marca. © <span id="year">2026</span> Azure Embalagens.</p>
   </div>
 </footer>
 

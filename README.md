@@ -38,3 +38,13 @@ Hospede a pasta inteira (GitHub Pages, Vercel, Netlify etc.). Os arquivos `_head
 - Não há pixel Meta, GTM nem webhook Make da Victoria. Esses dados pertencem ao outro cliente e foram removidos intencionalmente.
 - Eventos e integrações específicos da Azure devem ser configurados somente após confirmação das IDs corretas.
 - O link alternativo leva para a página de orçamento original da Azure.
+
+## Atualização de design (17/11/2026)
+- Hero no desktop: copy à esquerda e foto sem sobreposição excessiva à direita.
+- Hero mobile: foto em destaque no alto; copy curta e CTA em destaque sobre degradê inferior.
+- Título “Personalize suas embalagens” mantido em uma linha nas larguras testadas.
+- Um único botão na base da galeria (“Ver mais embalagens”); eliminado o CTA redundante.
+- Logo da Azure exibido no rodapé escuro.
+- Favicon e ícone Apple adaptados com o símbolo original da logo.
+- Instagram `https://www.instagram.com/personalizadosazure/` na seção sobre e no rodapé, como no modelo Victoria.
+- Integração Bitrix24 preservada e requer teste de envio após publicação.
