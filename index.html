@@ -6,7 +6,8 @@
 <title>Páscoa 2027 | Azure Embalagens Personalizadas</title>
 <meta name="description" content="Personalize suas embalagens para a Páscoa 2027 a partir de 200 unidades. Conheça modelos, benefícios e solicite um orçamento na Azure.">
 <link rel="icon" type="image/png" href="favicon.png">
-<link rel="preload" as="image" href="assets/banner.webp" imagesrcset="assets/banner-800.webp 800w, assets/banner.webp 1400w" imagesizes="(min-width: 900px) 56vw, 100vw" fetchpriority="high">
+<link rel="preload" as="image" href="assets/banner.webp?v=20261117new" media="(min-width: 900px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/banner-800.webp?v=20261117new" media="(max-width: 899px)" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@400;500;600&display=swap">
@@ -379,12 +380,28 @@ footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75
 }
 @media(prefers-reduced-motion:reduce) {.benefit-dot {transition:none;}}
 
+
+/* Banner Páscoa Azure: arte enviada pela cliente, enquadramento por dispositivo. */
+@media (max-width: 899px) {
+  .hero { background:#faf7ef url('assets/banner-800.webp?v=20261117new') center bottom / cover no-repeat; }
+  .hero > img { display:none; }
+  .hero::after { background:linear-gradient(180deg,rgba(255,252,246,.50) 0%,rgba(255,252,246,.20) 38%,rgba(255,252,246,0) 72%); }
+  .hero-inner { min-height:min(810px,92svh); align-items:flex-start; padding-block:clamp(7rem,15svh,10rem) 3rem; }
+  .hero-kicker { color:#27604e; }
+  .hero h1 { color:#143b30; text-shadow:none; }
+  .hero-sub,.hero-sub strong { color:#285348; }
+}
+@media (min-width: 900px) {
+  .hero > img { width:55%;object-position:center center; }
+  .hero::after { background:linear-gradient(90deg,#12372f 0%,#12372f 35%,rgba(18,55,47,.96) 43%,rgba(18,55,47,.25) 59%,rgba(18,55,47,0) 74%); }
+  .hero h1 { font-size:clamp(2.2rem,3.1vw,3.2rem); }
+}
 </style>
 <meta property="og:title" content="Páscoa 2027 | Azure Embalagens">
 <meta property="og:description" content="Embalagens personalizadas para sua marca a partir de 200 unidades.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:image" content="assets/banner.webp">
+<meta property="og:image" content="assets/banner.webp?v=20261117new">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
@@ -403,7 +420,7 @@ footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75
 </svg>
 
 <header class="hero">
-  <img src="assets/banner.webp" srcset="assets/banner-800.webp 800w, assets/banner.webp 1400w" sizes="(min-width: 900px) 56vw, 100vw" width="1400" height="1400" alt="Embalagens personalizadas de Páscoa apresentadas por uma cliente da Azure" fetchpriority="high" decoding="async">
+  <img src="assets/banner.webp?v=20261117new" width="1086" height="958" alt="Caixas personalizadas de Páscoa com ovos de chocolate e doces da Azure" fetchpriority="high" decoding="async">
   <div class="wrap hero-inner">
     <div class="hero-copy">
       <p class="eyebrow hero-kicker">PÁSCOA 2027 · AZURE PERSONALIZADOS</p>
