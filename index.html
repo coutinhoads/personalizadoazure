@@ -296,10 +296,6 @@ footer { border-top: 1px solid var(--border); }
 .about-img {object-position:center;}
 .azure-form {margin:2.5rem auto 1rem;min-height:10rem;}
 .form-loading {margin:0 auto;padding:1.5rem 1.25rem;text-align:center;color:var(--muted-fg);font-size:.875rem;background:var(--card);border:1px solid var(--border);border-radius:.5rem;}
-.form-fallback {display:grid;gap:.8rem;text-align:center;margin:1.25rem auto 0;}
-.form-fallback p {color:var(--muted-fg);font-size:.82rem;}
-.form-fallback .btn {max-width:100%;}
-@media(min-width:768px) {.form-fallback .btn {max-width:21rem;margin:auto;}}
 @media(min-width:900px) {
  .hero > img {left:auto;width:55%;object-position:center 34%;}
  .hero::after {background:linear-gradient(90deg,#12372f 0%,#12372f 33%,rgba(18,55,47,.94) 40%,rgba(18,55,47,.46) 52%,rgba(18,55,47,0) 75%);}
@@ -552,13 +548,12 @@ footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75
         <p class="lead" style="max-width:none">Personalize suas embalagens a partir de 200 unidades. Preencha o formulário oficial da Azure para falar sobre seu projeto.</p>
         <div class="azure-form" id="azure-form" aria-label="Formulário de orçamento da Azure Embalagens">
           <div class="form-loading" id="form-loading">Carregando formulário de orçamento...</div>
-          <script data-b24-form="inline/176/slw41m" data-skip-moving="true">
-          (function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn.bitrix24.com.br/b12993613/crm/form/loader_176.js');
+          <script data-b24-form="inline/176/slw41m" data-b24-form-telemetry-sign="v1:176:site.615904458314126d1236684afea1b049a5813fcc1d968b8ca689ae2cd9826859" data-skip-moving="true">
+          (function(w,d,u){
+            var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+            var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+          })(window,document,'https://cdn.bitrix24.com.br/b12993613/crm/form/loader_176.js');
           </script>
-        </div>
-        <div class="form-fallback">
-          <p>Se o formulário não aparecer, acesse a versão oficial.</p>
-          <a class="btn btn-block" href="https://personalize.azureembalagens.com.br/pascoa2027/#b9726" target="_blank" rel="noopener noreferrer">Abrir formulário oficial</a>
         </div>
       </div>
     </div>
