@@ -396,6 +396,15 @@ footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75
   .hero::after { background:linear-gradient(90deg,#12372f 0%,#12372f 35%,rgba(18,55,47,.96) 43%,rgba(18,55,47,.25) 59%,rgba(18,55,47,0) 74%); }
   .hero h1 { font-size:clamp(2.2rem,3.1vw,3.2rem); }
 }
+
+/* CTA de conversão logo após os benefícios */
+.benefits-action {display:flex;justify-content:center;margin-top:clamp(1.6rem,3.5vw,2.3rem);}
+.benefits-action a {display:inline-flex;align-items:center;justify-content:center;gap:.7rem;max-width:100%;min-height:3.35rem;padding:.95rem 1.7rem;border:1px solid #1d5743;border-radius:999px;background:#1b5945;color:#fff;text-decoration:none;font-family:var(--font-body);font-size:1rem;font-weight:600;letter-spacing:.01em;box-shadow:0 6px 17px rgba(20,67,50,.13);transition:background .2s ease,transform .2s ease,box-shadow .2s ease;}
+.benefits-action a:hover {background:#124735;transform:translateY(-2px);box-shadow:0 9px 22px rgba(20,67,50,.17);}
+.benefits-action a:focus-visible {outline:3px solid #68d89c;outline-offset:4px;}
+.benefits-action .benefits-cta-arrow {font-size:1.22rem;line-height:1;}
+@media(max-width:600px){.benefits-action {margin-top:1.3rem;padding-inline:.1rem;}.benefits-action a {font-size:.94rem;padding:.82rem 1.35rem;min-height:3.15rem;}}
+@media(prefers-reduced-motion:reduce){.benefits-action a {transition:none;}}
 </style>
 <meta property="og:title" content="Páscoa 2027 | Azure Embalagens">
 <meta property="og:description" content="Embalagens personalizadas para sua marca a partir de 200 unidades.">
@@ -480,6 +489,9 @@ footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75
         <button type="button" class="benefit-nav" id="benefits-prev" aria-label="Benefício anterior"><svg><use href="#i-left"/></svg></button>
         <div class="benefit-dots" id="benefits-dots" aria-label="Escolher benefício"></div>
         <button type="button" class="benefit-nav" id="benefits-next" aria-label="Próximo benefício"><svg><use href="#i-right"/></svg></button>
+      </div>
+      <div class="benefits-action">
+        <a href="#orcamento" aria-label="Ir ao formulário e solicitar personalização de embalagens">Quero personalizar minhas embalagens <span class="benefits-cta-arrow" aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
