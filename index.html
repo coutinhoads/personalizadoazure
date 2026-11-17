@@ -405,6 +405,22 @@ footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75
 .benefits-action .benefits-cta-arrow {font-size:1.22rem;line-height:1;}
 @media(max-width:600px){.benefits-action {margin-top:1.3rem;padding-inline:.1rem;}.benefits-action a {font-size:.94rem;padding:.82rem 1.35rem;min-height:3.15rem;}}
 @media(prefers-reduced-motion:reduce){.benefits-action a {transition:none;}}
+
+/* Marca Azure centralizada no banner sem comprometer a fotografia. */
+.hero-logo {display:block;width:148px;height:auto;margin:0 auto .9rem;border-radius:20px;background:rgba(19,73,57,.86);border:1px solid rgba(24,89,69,.12);box-shadow:0 7px 20px rgba(12,52,36,.10);overflow:hidden;}
+.hero-logo img {display:block;width:100%;height:auto;object-fit:contain;}
+@media(max-width:899px) {
+ .hero-inner {min-height:min(725px,84svh);padding-block:clamp(3.2rem,7svh,5rem) 1.6rem;}
+ .hero-logo {width:152px;margin-bottom:1rem;}
+ .hero-kicker {margin-bottom:.6rem;}
+ .hero-sub {margin-top:.65rem;}
+}
+@media(min-width:900px) {
+ .hero-inner {min-height:min(770px,80svh);}
+ .hero-copy {max-width:510px;text-align:center;}
+ .hero-logo {width:162px;margin:0 auto 1.15rem;background:transparent;box-shadow:none;border:0;}
+ .hero-sub {margin-left:auto;margin-right:auto;}
+}
 </style>
 <meta property="og:title" content="Páscoa 2027 | Azure Embalagens">
 <meta property="og:description" content="Embalagens personalizadas para sua marca a partir de 200 unidades.">
@@ -432,6 +448,7 @@ footer .foot-note {color:#abc7ba;margin:1.1rem 0 0;max-width:33rem;font-size:.75
   <img src="assets/banner.webp?v=20261117new" width="1086" height="958" alt="Caixas personalizadas de Páscoa com ovos de chocolate e doces da Azure" fetchpriority="high" decoding="async">
   <div class="wrap hero-inner">
     <div class="hero-copy">
+      <div class="hero-logo"><img src="assets/logo-azure.png" width="236" height="146" alt="Azure Personalizados" decoding="async"></div>
       <p class="eyebrow hero-kicker">PÁSCOA 2027 · AZURE PERSONALIZADOS</p>
       <h1>Personalize suas embalagens</h1>
       <p class="hero-sub">Sua marca em cada detalhe. <strong>A partir de 200 unidades.</strong></p>
